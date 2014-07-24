@@ -1,0 +1,26 @@
+# master branch: HTML results
+# doc-sources: Document sources for Sphinx
+
+# List of directories & files required to build Sphinx:
+GH_PAGES_SOURCES=source Makefile
+
+pages:
+	# Clean up possible previous stuff:
+	git checkout master
+	rm -rf build _sources _static *.html *.js
+
+	# Checkout only the source files required for Sphinx:
+	git checkout doc-sources $(GH_PAGES_SOURCES)
+
+	# Build pages:
+	make html
+
+	# Bring them to the root dir:
+	mv -fv build/html/* ./
+	rm -rf build
+
+	git checkout master
+	git add -A *.html *.js *.inv _static 
+#	git ci -m "Generated pages for `git log master -1 --pretty=short --abbrev-commit`" && git push origin master ; git checkout master && git reset HEAD
+
+
