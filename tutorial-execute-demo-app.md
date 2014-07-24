@@ -1,5 +1,5 @@
 Demo missions
-==============
+==========
 
 To start one of the demo missions for a simulated robot, open a console and go to the missions/simulation_one_robot directory. Once there, invoke pAntler with the desired mission file as argument.
 
