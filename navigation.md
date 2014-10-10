@@ -8,6 +8,7 @@
   * [Installing](tutorial-install.md)
   * [Executing robotic apps](tutorial-execute-demo-app.md)
   * [Creating new modules](tutorial-creating-module.md)
+  * [Command-line reference](tutorial-openmora-commands.md)
 
 [Packages]()
 

@@ -46,7 +46,7 @@ Working directory structure
 
 After [installing](tutorial-install.md), this is the recommended directory layout: 
 
-* `OPENMORA_DIR`: The root directory, located anywhere in the system.
+* `OPENMORA_DIR`: The root or **workspace** directory, located anywhere in the system.
   * `OPENMORA_DIR/bin`: Executables built from all the modules.
   * `OPENMORA_DIR/mora-base`: Core components
   * `OPENMORA_DIR/*-pkg`: Other OpenMORA packages

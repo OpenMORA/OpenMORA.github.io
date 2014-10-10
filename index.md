@@ -12,6 +12,7 @@ Get started
 * [Launch a robotic app](tutorial-execute-demo-app.md): Learn to launch apps.
 * [Browse existing modules](mooxygen.md)
 * [Write a new C++ module](tutorial-creating-module.md).
+* [Command-line reference](tutorial-openmora-commands.md)
 
 Screenshots 
 --------------
