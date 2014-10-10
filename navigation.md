@@ -1,20 +1,22 @@
 # OpenMORA
 
-[About](index.md)
+[Home](index.md)
 
-[Docs]()
+[Tutorials]()
 
   * [Quickstart](tutorial-quickstart.md)
   * [Installing](tutorial-install.md)
   * [Executing robotic apps](tutorial-execute-demo-app.md)
   * [Creating new modules](tutorial-creating-module.md)
-  - - - -
+
+[Packages]()
+
+  * [Browse on GitHub](https://github.com/OpenMORA)
   * # Auto-generated
-  * [Modules](mooxygen.md)
+  * [Modules docs](mooxygen.md)
 
+[gimmick:theme](flatly)
 
-[gimmick:theme](cosmo)
-
-[gimmick:ThemeChooser](Change theme)
+# [gimmick:ThemeChooser](Change theme)
 
 
