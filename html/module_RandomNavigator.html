@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>OpenMORA</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+
+<!-- Page generated automatically by Mooxygen 1.1.0 -->
+<body>
+<div class="tabs">
+ <ul>
+  <li><a href="index.html"><span>Global overview</span></a></li>
+  <li class="current"><a href="modules.html"><span>All modules</span></a></li>
+  <li><a href="variables.html"><span>All variables</span></a></li>
+  <li><a href="commands.html"><span>All commands</span></a></li>
+  <li><a href="missions.html"><span>Mission files</span></a></li>
+  <li><a href="pipelines.html"><span>Pipelines</span></a></li>
+ </ul>
+</div><br>
+<br><center><h3> Module: RandomNavigator</h3></center><br>
+<u>Module info:</u><br>
+<br> <div align="center" ><table class="mooxygen" width="95%" >
+<tr>
+ <td align="center" bgcolor="lightgrey"> <b>Module name</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Short description</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Publishes</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Subscribes</b> </td>
+</tr>
+<tr>
+ <td align="center"> <a href="module_RandomNavigator.html" > <small>RandomNavigator</small> </a></td>
+ <td align="left"> <small>This module request continous reactive navigations by randomly selecting nodes from the graph topology.</small> </td>
+ <td align="center"> <small><a href="var_NEW_TASK.html" >NEW_TASK</a> , <a href="var_RANDOM_NAVIGATOR.html" >RANDOM_NAVIGATOR</a> </small> </td>
+ <td align="center"> <small><a href="var_GRAPH.html" >GRAPH</a> , <a href="var_PLAN_FINISHED.html" >PLAN_FINISHED</a> , <a href="var_RANDOM_NAVIGATOR.html" >RANDOM_NAVIGATOR</a> , <a href="var_ROBOT_TOPOLOGICAL_PLACE.html" >ROBOT_TOPOLOGICAL_PLACE</a> , <a href="var_SHUTDOWN.html" >SHUTDOWN</a> </small> </td>
+</tr>
+</table> </div>
+<br>
+<u>MOOS commands accepted by the module:</u><br><ul>
+<li>(None)</li>
+</ul><br>
+<u>Parameters accepted in the MOOS mission file:</u><br>
+<div align="center" ><table class="mooxygen" width="95%" >
+<tr>
+ <td align="center" bgcolor="lightgrey"> <b>Parameter</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Description</b> </td>
+</tr>
+<tr>
+ <td align="center"> <code>target_only_labeled_nodes</code> </td>
+ <td> Indicates if all nodes are legible as targets, or only those labeled (!=NODE...) </td>
+</tr>
+</table></div>
+<br><u>Detailed description:</u><br>
+This module request continous reactive navigations by randomly selecting nodes from the graph topology.This module can be used to make a robot to randomly patrol an environment.<br><br><u>Module graph:</u><br>
+<div align="center"> <img src="var_RandomNavigator.png" border="0" usemap="#RandomNavigator" alt="RandomNavigator"> </div>
+<map id="RandomNavigator" name="RandomNavigator"><area shape="rect" id="node1" href="module_Agenda.html" title="Agenda" alt="" coords="1496,869,1568,917"><area shape="rect" id="node2" href="module_Arm_Kinova.html" title="Arm_Kinova" alt="" coords="977,101,1069,149"><area shape="rect" id="node3" href="module_AutoDocking_Camera.html" title="AutoDocking_Camera" alt="" coords="1093,101,1237,149"><area shape="rect" id="node4" href="module_AutoDocking_Laser.html" title="AutoDocking_Laser" alt="" coords="1262,101,1394,149"><area shape="rect" id="node5" href="module_BatteryManager.html" title="BatteryManager" alt="" coords="183,197,294,245"><area shape="poly" id="node52" href="var_NEW_TASK.html" title="NEW_TASK" alt="" coords="462,797,459,790,453,783,442,778,429,775,415,773,400,775,387,778,377,783,370,790,368,797,370,805,377,811,387,817,400,820,415,821,429,820,442,817,453,811,459,805"><area shape="rect" id="node6" href="module_CamControl_ImagingSource.html" title="CamControl_ImagingSource" alt="" coords="1419,101,1597,149"><area shape="rect" id="node7" href="module_DAQ_Advantech.html" title="DAQ_Advantech" alt="" coords="1621,101,1736,149"><area shape="rect" id="node8" href="module_DistributionMapping.html" title="DistributionMapping" alt="" coords="1760,101,1899,149"><area shape="rect" id="node9" href="module_Domotics_IpPower.html" title="Domotics_IpPower" alt="" coords="1923,101,2048,149"><area shape="rect" id="node10" href="module_eNeck.html" title="eNeck" alt="" coords="2072,101,2144,149"><area shape="rect" id="node11" href="module_Enose_Display.html" title="Enose_Display" alt="" coords="2168,101,2272,149"><area shape="rect" id="node12" href="module_Enose_MCE.html" title="Enose_MCE" alt="" coords="2296,101,2387,149"><area shape="rect" id="node13" href="module_Enose_Simul.html" title="Enose_Simul" alt="" coords="2411,101,2506,149"><area shape="rect" id="node14" href="module_Executor.html" title="Executor" alt="" coords="423,293,495,341"><area shape="poly" id="node53" href="var_PLAN_FINISHED.html" title="PLAN_FINISHED" alt="" coords="520,413,517,406,508,399,495,394,478,391,459,389,440,391,423,394,409,399,400,406,397,413,400,421,409,427,423,433,440,436,459,437,478,436,495,433,508,427,517,421"><area shape="poly" id="node55" href="var_ROBOT_TOPOLOGICAL_PLACE.html" title="ROBOT_TOPOLOGICAL_PLACE" alt="" coords="854,413,849,406,834,399,811,394,782,391,749,389,717,391,688,394,665,399,650,406,645,413,650,421,665,427,688,433,717,436,749,437,782,436,811,433,834,427,849,421"><area shape="rect" id="node15" href="module_GenericSensor.html" title="GenericSensor" alt="" coords="2633,101,2733,149"><area shape="rect" id="node16" href="module_JoystickControl.html" title="JoystickControl" alt="" coords="2757,101,2867,149"><area shape="rect" id="node17" href="module_Kinect_Odometry.html" title="Kinect_Odometry" alt="" coords="2891,101,3010,149"><area shape="rect" id="node18" href="module_LibeliumWSN.html" title="LibeliumWSN" alt="" coords="3034,101,3134,149"><area shape="rect" id="node19" href="module_Localization2D_Fusion.html" title="Localization2D_Fusion" alt="" coords="3158,101,3309,149"><area shape="rect" id="node20" href="module_Localization2D_PF.html" title="Localization2D_PF" alt="" coords="3333,101,3461,149"><area shape="rect" id="node21" href="module_LookAtPoint.html" title="LookAtPoint" alt="" coords="3485,101,3579,149"><area shape="rect" id="node22" href="module_MapCreator.html" title="MapCreator" alt="" coords="3603,101,3690,149"><area shape="rect" id="node23" href="module_MobileRobot_Giraff.html" title="MobileRobot_Giraff" alt="" coords="3714,101,3849,149"><area shape="rect" id="node24" href="module_MobileRobot_Pioneer.html" title="MobileRobot_Pioneer" alt="" coords="3873,101,4017,149"><area shape="rect" id="node25" href="module_MobileRobot_Segway.html" title="MobileRobot_Segway" alt="" coords="4042,101,4187,149"><area shape="rect" id="node26" href="module_MobileRobot_Simul.html" title="MobileRobot_Simul" alt="" coords="4211,101,4346,149"><area shape="rect" id="node27" href="module_MonoCamera.html" title="MonoCamera" alt="" coords="4371,101,4467,149"><area shape="rect" id="node28" href="module_MOX_SensorModel.html" title="MOX_SensorModel" alt="" coords="4491,101,4621,149"><area shape="rect" id="node29" href="module_MQTTMosquitto.html" title="MQTTMosquitto" alt="" coords="671,677,787,725"><area shape="poly" id="node54" href="var_RANDOM_NAVIGATOR.html" title="RANDOM_NAVIGATOR" alt="" coords="680,605,676,598,664,591,646,586,624,583,599,581,574,583,551,586,533,591,522,598,518,605,522,613,533,619,551,625,574,628,599,629,624,628,646,625,664,619,676,613"><area shape="rect" id="node30" href="module_NavigatorReactivePTG.html" title="NavigatorReactivePTG" alt="" coords="4646,101,4794,149"><area shape="rect" id="node31" href="module_NavigatorReactivePTG3D.html" title="NavigatorReactivePTG3D" alt="" coords="789,101,953,149"><area shape="poly" id="node56" href="var_SHUTDOWN.html" title="SHUTDOWN" alt="" coords="2618,29,2615,22,2608,15,2598,10,2584,7,2569,5,2554,7,2541,10,2530,15,2523,22,2521,29,2523,37,2530,43,2541,49,2554,52,2569,53,2584,52,2598,49,2608,43,2615,37"><area shape="rect" id="node32" href="module_NavigatorTopological.html" title="NavigatorTopological" alt="" coords="570,293,713,341"><area shape="rect" id="node33" href="module_Planner.html" title="Planner" alt="" coords="361,485,433,533"><area shape="rect" id="node34" href="module_RandomNavigator.html" title="RandomNavigator" alt="" coords="537,485,660,533"><area shape="rect" id="node35" href="module_RGBDSensorToReactive.html" title="RGBDSensorToReactive" alt="" coords="4819,101,4976,149"><area shape="rect" id="node36" href="module_RobotControlManager.html" title="RobotControlManager" alt="" coords="397,677,544,725"><area shape="rect" id="node37" href="module_RobotGUI.html" title="RobotGUI" alt="" coords="569,677,647,725"><area shape="rect" id="node38" href="module_SessionLogger.html" title="SessionLogger" alt="" coords="5001,101,5103,149"><area shape="rect" id="node39" href="module_SkypeComm.html" title="SkypeComm" alt="" coords="863,677,955,725"><area shape="rect" id="node40" href="module_SkypeComm_WindowsAPI.html" title="SkypeComm_WindowsAPI" alt="" coords="980,677,1151,725"><area shape="rect" id="node41" href="module_SpeechSynth.html" title="SpeechSynth" alt="" coords="5128,101,5221,149"><area shape="rect" id="node42" href="module_StateCharts.html" title="StateCharts" alt="" coords="86,485,170,533"><area shape="rect" id="node43" href="module_TEST_extRGBDSensor.html" title="TEST_extRGBDSensor" alt="" coords="5245,101,5395,149"><area shape="rect" id="node44" href="module_TextInterpreter.html" title="TextInterpreter" alt="" coords="1717,581,1819,629"><area shape="rect" id="node45" href="module_TwitterAgent.html" title="TwitterAgent" alt="" coords="5419,101,5514,149"><area shape="rect" id="node46" href="module_VoiceFestival.html" title="VoiceFestival" alt="" coords="5538,101,5635,149"><area shape="rect" id="node47" href="module_VoiceVerbio.html" title="VoiceVerbio" alt="" coords="5,197,96,245"><area shape="rect" id="node48" href="module_Wifi_KeepCoverage.html" title="Wifi_KeepCoverage" alt="" coords="5660,101,5793,149"><area shape="rect" id="node49" href="module_Wifi_Monitor.html" title="Wifi_Monitor" alt="" coords="5817,101,5916,149"><area shape="rect" id="node50" href="module_WorldModel.html" title="WorldModel" alt="" coords="621,101,713,149"><area shape="poly" id="node51" href="var_GRAPH.html" title="GRAPH" alt="" coords="703,221,701,214,696,207,688,202,678,199,667,197,656,199,646,202,638,207,632,214,631,221,632,229,638,235,646,241,656,244,667,245,678,244,688,241,696,235,701,229"></map>
+<br><u>TODO list:</u><br>
+(None)
+<br><br><br><u>Changes log:</u><br>
+(None)
+<br><br>
+<br><br><hr><small>Page generated by <a href="https://github.com/jlblancoc/mooxygen" >Mooxygen 1.1.0</a> at Thu Jan 22 11:30:21 2015
+</small>
+<br><div align="right"> <a href="http://validator.w3.org/check?uri=referer"> <img border="0" src="http://www.w3.org/Icons/valid-html401-blue" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+</div>
+
+</body></html>

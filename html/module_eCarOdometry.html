@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>OpenMORA</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+
+<!-- Page generated automatically by Mooxygen 1.1.0 -->
+<body>
+<div class="tabs">
+ <ul>
+  <li><a href="index.html"><span>Global overview</span></a></li>
+  <li class="current"><a href="modules.html"><span>All modules</span></a></li>
+  <li><a href="variables.html"><span>All variables</span></a></li>
+  <li><a href="commands.html"><span>All commands</span></a></li>
+  <li><a href="missions.html"><span>Mission files</span></a></li>
+  <li><a href="pipelines.html"><span>Pipelines</span></a></li>
+ </ul>
+</div><br>
+<br><center><h3> Module: eCarOdometry</h3></center><br>
+<u>Module info:</u><br>
+<br> <div align="center" ><table class="mooxygen" width="95%" >
+<tr>
+ <td align="center" bgcolor="lightgrey"> <b>Module name</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Short description</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Publishes</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Subscribes</b> </td>
+</tr>
+<tr>
+ <td align="center"> <a href="module_eCarOdometry.html" > <small>eCarOdometry</small> </a></td>
+ <td align="left"> <small>Differential-drive odometry estimation from a pair of encoders in the rear wheels.</small> </td>
+ <td align="center"> <small><a href="var_ODOMETRY.html" >ODOMETRY</a> , <a href="var_ODOMETRY_ANG_SPEED.html" >ODOMETRY_ANG_SPEED</a> , <a href="var_ODOMETRY_INCR.html" >ODOMETRY_INCR</a> , <a href="var_ODOMETRY_LIN_SPEED.html" >ODOMETRY_LIN_SPEED</a> , <a href="var_ODOMETRY_OBS.html" >ODOMETRY_OBS</a> </small> </td>
+ <td align="center"> <small><a href="var_ENC1_CH0_AVRG_VEL.html" >ENC1_CH0_AVRG_VEL</a> , <a href="var_ENC1_CH0_COUNT.html" >ENC1_CH0_COUNT</a> , <a href="var_ENC1_CH1_AVRG_VEL.html" >ENC1_CH1_AVRG_VEL</a> , <a href="var_ENC1_CH1_COUNT.html" >ENC1_CH1_COUNT</a> </small> </td>
+</tr>
+</table> </div>
+<br>
+<u>MOOS commands accepted by the module:</u><br><ul>
+<li>(None)</li>
+</ul><br>
+<u>Parameters accepted in the MOOS mission file:</u><br>
+<div align="center" ><table class="mooxygen" width="95%" >
+<tr>
+ <td align="center" bgcolor="lightgrey"> <b>Parameter</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Description</b> </td>
+</tr>
+<tr>
+ <td align="center"> <code>left_K</code> </td>
+ <td> Ticks to meters constant for left wheel encoders. </td>
+</tr>
+<tr>
+ <td align="center"> <code>odometry_verbose</code> </td>
+ <td> Set to &quot;true&quot; to display live odometry to console. </td>
+</tr>
+<tr>
+ <td align="center"> <code>right_K</code> </td>
+ <td> Ticks to meters constant for right wheel encoders. </td>
+</tr>
+<tr>
+ <td align="center"> <code>wheels_dist</code> </td>
+ <td> Wheel-to-wheel distance (meters) </td>
+</tr>
+</table></div>
+<br><u>Detailed description:</u><br>
+Differential-drive odometry estimation from a pair of encoders in the rear wheels.<br>It is assumed that ENC1_CH0_COUNT is the LEFT wheel, ENC1_CH1_COUNT is the RIGHT encoder.<br><br><u>Module graph:</u><br>
+<div align="center"> <img src="var_eCarOdometry.png" border="0" usemap="#eCarOdometry" alt="eCarOdometry"> </div>
+<map id="eCarOdometry" name="eCarOdometry"><area shape="rect" id="node1" href="module_AutoDocking_Camera.html" title="AutoDocking_Camera" alt="" coords="331,293,475,341"><area shape="rect" id="node2" href="module_eCarOdometry.html" title="eCarOdometry" alt="" coords="517,101,619,149"><area shape="poly" id="node13" href="var_ODOMETRY.html" title="ODOMETRY" alt="" coords="288,221,286,214,279,207,268,202,255,199,240,197,225,199,212,202,201,207,194,214,192,221,194,229,201,235,212,241,225,244,240,245,255,244,268,241,279,235,286,229"><area shape="poly" id="node14" href="var_ODOMETRY_ANG_SPEED.html" title="ODOMETRY_ANG_SPEED" alt="" coords="656,221,651,214,639,207,620,202,595,199,568,197,541,199,516,202,497,207,485,214,480,221,485,229,497,235,516,241,541,244,568,245,595,244,620,241,639,235,651,229"><area shape="poly" id="node15" href="var_ODOMETRY_INCR.html" title="ODOMETRY_INCR" alt="" coords="813,221,810,214,801,207,786,202,767,199,747,197,726,199,708,202,693,207,683,214,680,221,683,229,693,235,708,241,726,244,747,245,767,244,786,241,801,235,810,229"><area shape="poly" id="node16" href="var_ODOMETRY_LIN_SPEED.html" title="ODOMETRY_LIN_SPEED" alt="" coords="1008,221,1004,214,992,207,973,202,949,199,923,197,896,199,872,202,854,207,841,214,837,221,841,229,854,235,872,241,896,244,923,245,949,244,973,241,992,235,1004,229"><area shape="poly" id="node17" href="var_ODOMETRY_OBS.html" title="ODOMETRY_OBS" alt="" coords="457,221,454,214,445,207,431,202,413,199,393,197,374,199,356,202,342,207,333,214,330,221,333,229,342,235,356,241,374,244,393,245,413,244,431,241,445,235,454,229"><area shape="rect" id="node3" href="module_Localization2D_Fusion.html" title="Localization2D_Fusion" alt="" coords="499,293,650,341"><area shape="rect" id="node4" href="module_Localization2D_PF.html" title="Localization2D_PF" alt="" coords="5,293,133,341"><area shape="rect" id="node5" href="module_MobileRobot_Giraff.html" title="MobileRobot_Giraff" alt="" coords="29,101,163,149"><area shape="rect" id="node6" href="module_MobileRobot_Pioneer.html" title="MobileRobot_Pioneer" alt="" coords="188,101,332,149"><area shape="rect" id="node7" href="module_MobileRobot_Simul.html" title="MobileRobot_Simul" alt="" coords="357,101,491,149"><area shape="rect" id="node8" href="module_NavigatorReactivePTG.html" title="NavigatorReactivePTG" alt="" coords="158,293,306,341"><area shape="poly" id="node9" href="var_ENC1_CH0_AVRG_VEL.html" title="ENC1_CH0_AVRG_VEL" alt="" coords="389,29,385,22,373,15,356,10,333,7,308,5,283,7,260,10,243,15,231,22,227,29,231,37,243,43,260,49,283,52,308,53,333,52,356,49,373,43,385,37"><area shape="poly" id="node10" href="var_ENC1_CH0_COUNT.html" title="ENC1_CH0_COUNT" alt="" coords="550,29,547,22,537,15,522,10,503,7,481,5,460,7,441,10,426,15,416,22,413,29,416,37,426,43,441,49,460,52,481,53,503,52,522,49,537,43,547,37"><area shape="poly" id="node11" href="var_ENC1_CH1_AVRG_VEL.html" title="ENC1_CH1_AVRG_VEL" alt="" coords="736,29,732,22,720,15,702,10,680,7,655,5,630,7,607,10,589,15,578,22,574,29,578,37,589,43,607,49,630,52,655,53,680,52,702,49,720,43,732,37"><area shape="poly" id="node12" href="var_ENC1_CH1_COUNT.html" title="ENC1_CH1_COUNT" alt="" coords="897,29,893,22,884,15,868,10,849,7,828,5,807,7,788,10,772,15,763,22,759,29,763,37,772,43,788,49,807,52,828,53,849,52,868,49,884,43,893,37"></map>
+<br><u>TODO list:</u><br>
+(None)
+<br><br><br><u>Changes log:</u><br>
+(None)
+<br><br>
+<br><br><hr><small>Page generated by <a href="https://github.com/jlblancoc/mooxygen" >Mooxygen 1.1.0</a> at Thu Jan 22 11:30:21 2015
+</small>
+<br><div align="right"> <a href="http://validator.w3.org/check?uri=referer"> <img border="0" src="http://www.w3.org/Icons/valid-html401-blue" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+</div>
+
+</body></html>

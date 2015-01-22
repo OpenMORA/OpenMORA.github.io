@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>OpenMORA</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+
+<!-- Page generated automatically by Mooxygen 1.1.0 -->
+<body>
+<div class="tabs">
+ <ul>
+  <li><a href="index.html"><span>Global overview</span></a></li>
+  <li class="current"><a href="modules.html"><span>All modules</span></a></li>
+  <li><a href="variables.html"><span>All variables</span></a></li>
+  <li><a href="commands.html"><span>All commands</span></a></li>
+  <li><a href="missions.html"><span>Mission files</span></a></li>
+  <li><a href="pipelines.html"><span>Pipelines</span></a></li>
+ </ul>
+</div><br>
+<br><center><h3> Module: RGBDSensorToReactive</h3></center><br>
+<u>Module info:</u><br>
+<br> <div align="center" ><table class="mooxygen" width="95%" >
+<tr>
+ <td align="center" bgcolor="lightgrey"> <b>Module name</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Short description</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Publishes</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Subscribes</b> </td>
+</tr>
+<tr>
+ <td align="center"> <a href="module_RGBDSensorToReactive.html" > <small>RGBDSensorToReactive</small> </a></td>
+ <td align="left"> <small>This module implements the adquisition of depth and infrared images from an RGB-D camera (PrimeSense/Asus/Kinect)</small> </td>
+ <td align="center"> <small><a href="var_IRD_WARNING.html" >IRD_WARNING</a> , <a href="var_KINECT1.html" >KINECT1</a> </small> </td>
+ <td align="center"> <small><a href="var_SHUTDOWN.html" >SHUTDOWN</a> </small> </td>
+</tr>
+</table> </div>
+<br>
+<u>MOOS commands accepted by the module:</u><br><ul>
+<li>(None)</li>
+</ul><br>
+<u>Parameters accepted in the MOOS mission file:</u><br>
+<div align="center" ><table class="mooxygen" width="95%" >
+<tr>
+ <td align="center" bgcolor="lightgrey"> <b>Parameter</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Description</b> </td>
+</tr>
+<tr>
+ <td align="center"> <code>Count_threshold</code> </td>
+ <td> [if detect_close_obstacles_with_ir=true] Number of pixels with IR value &gt; IR_threshold to send the Reactive Module a warning (something may be close) </td>
+</tr>
+<tr>
+ <td align="center"> <code>detect_close_obstacles_with_ir</code> </td>
+ <td> If enable, points with IR value &gt; IR_threshold will increase the counter of high_ir_px (see Count_threshold param) </td>
+</tr>
+<tr>
+ <td align="center"> <code>discard_high_ir_points</code> </td>
+ <td> If enable, all points with IR value &gt; IR_threshold will be discarded in the depth measurements (to avoid spurious due to light sources) </td>
+</tr>
+<tr>
+ <td align="center"> <code>Downsample</code> </td>
+ <td> Use it to consider coarser images (computationally lighter). It must be integer </td>
+</tr>
+<tr>
+ <td align="center"> <code>floor_limit</code> </td>
+ <td> Points detected with height &lt; floor_limit will be considered as floor and discarded as obstacles </td>
+</tr>
+<tr>
+ <td align="center"> <code>IR_threshold</code> </td>
+ <td> Infrared threshold to consider a point affected by an IR light source </td>
+</tr>
+<tr>
+ <td align="center"> <code>max_depth</code> </td>
+ <td> The max depth (m) the camera is able to detect </td>
+</tr>
+<tr>
+ <td align="center"> <code>min_depth</code> </td>
+ <td> The minimum depth (m) the camera is able to detect </td>
+</tr>
+<tr>
+ <td align="center"> <code>New_sensor</code> </td>
+ <td> Indicates the type of RGBD camera: TRUE=PrimeSense or Asus, FALSE=Kinect </td>
+</tr>
+<tr>
+ <td align="center"> <code>Opengl_scene</code> </td>
+ <td> Whether or not to display an opengl scene with the detected obstacles (used for debug) </td>
+</tr>
+<tr>
+ <td align="center"> <code>pose_pitch</code> </td>
+ <td> The pitch angle (degrees) of the camera on the robot (-80,80) (something logical...) </td>
+</tr>
+<tr>
+ <td align="center"> <code>pose_roll</code> </td>
+ <td> The roll angle (degrees) of the camera on the robot (-90,90) </td>
+</tr>
+<tr>
+ <td align="center"> <code>pose_x</code> </td>
+ <td> The X position (m) of the camera on the robot </td>
+</tr>
+<tr>
+ <td align="center"> <code>pose_y</code> </td>
+ <td> The Y position (m) of the camera on the robot </td>
+</tr>
+<tr>
+ <td align="center"> <code>pose_yaw</code> </td>
+ <td> The yaw angle (degrees) of the camera on the robot (-180,180) </td>
+</tr>
+<tr>
+ <td align="center"> <code>pose_z</code> </td>
+ <td> The Z position (m) of the camera on the robot </td>
+</tr>
+<tr>
+ <td align="center"> <code>Res_height</code> </td>
+ <td> Camera resolution(px) - Shared for depth and infrared images (240 or 480). Only used if New_sensor == true </td>
+</tr>
+<tr>
+ <td align="center"> <code>Res_width</code> </td>
+ <td> Camera resolution(px) - Shared for depth and infrared images (320 or 640). Only used if New_sensor == true </td>
+</tr>
+</table></div>
+<br><u>Detailed description:</u><br>
+This module implements the adquisition of depth and infrared images from an RGB-D camera (PrimeSense/Asus/Kinect)and processes these data to send them to the 3D reactive module. The module sorts the points in height bands (according to the height sectionsused to model the robot shape) and finds the most restrictive set of obstacles for each height band. This module should always belaunched together with the &quot;NavigatorReactivePTG3D&quot; because some of its configuration parameters need to be read.<br><br><u>Module graph:</u><br>
+<div align="center"> <img src="var_RGBDSensorToReactive.png" border="0" usemap="#RGBDSensorToReactive" alt="RGBDSensorToReactive"> </div>
+<map id="RGBDSensorToReactive" name="RGBDSensorToReactive"><area shape="rect" id="node1" href="module_Agenda.html" title="Agenda" alt="" coords="40,101,112,149"><area shape="rect" id="node2" href="module_Arm_Kinova.html" title="Arm_Kinova" alt="" coords="137,101,229,149"><area shape="rect" id="node3" href="module_AutoDocking_Camera.html" title="AutoDocking_Camera" alt="" coords="254,101,398,149"><area shape="rect" id="node4" href="module_AutoDocking_Laser.html" title="AutoDocking_Laser" alt="" coords="422,101,554,149"><area shape="rect" id="node5" href="module_BatteryManager.html" title="BatteryManager" alt="" coords="578,101,689,149"><area shape="rect" id="node6" href="module_CamControl_ImagingSource.html" title="CamControl_ImagingSource" alt="" coords="714,101,892,149"><area shape="rect" id="node7" href="module_DAQ_Advantech.html" title="DAQ_Advantech" alt="" coords="916,101,1031,149"><area shape="rect" id="node8" href="module_DistributionMapping.html" title="DistributionMapping" alt="" coords="1055,101,1194,149"><area shape="rect" id="node9" href="module_Domotics_IpPower.html" title="Domotics_IpPower" alt="" coords="1218,101,1343,149"><area shape="rect" id="node10" href="module_eNeck.html" title="eNeck" alt="" coords="1367,101,1439,149"><area shape="rect" id="node11" href="module_Enose_Display.html" title="Enose_Display" alt="" coords="1463,101,1567,149"><area shape="rect" id="node12" href="module_Enose_MCE.html" title="Enose_MCE" alt="" coords="1591,101,1682,149"><area shape="rect" id="node13" href="module_Enose_Simul.html" title="Enose_Simul" alt="" coords="1706,101,1801,149"><area shape="rect" id="node14" href="module_Executor.html" title="Executor" alt="" coords="1826,101,1898,149"><area shape="rect" id="node15" href="module_GenericSensor.html" title="GenericSensor" alt="" coords="1922,101,2022,149"><area shape="rect" id="node16" href="module_JoystickControl.html" title="JoystickControl" alt="" coords="2047,101,2156,149"><area shape="rect" id="node17" href="module_Kinect_Odometry.html" title="Kinect_Odometry" alt="" coords="2181,101,2300,149"><area shape="rect" id="node18" href="module_LibeliumWSN.html" title="LibeliumWSN" alt="" coords="2324,101,2424,149"><area shape="rect" id="node19" href="module_Localization2D_Fusion.html" title="Localization2D_Fusion" alt="" coords="2448,101,2598,149"><area shape="rect" id="node20" href="module_Localization2D_PF.html" title="Localization2D_PF" alt="" coords="2623,101,2751,149"><area shape="rect" id="node21" href="module_LookAtPoint.html" title="LookAtPoint" alt="" coords="2775,101,2868,149"><area shape="rect" id="node22" href="module_MapCreator.html" title="MapCreator" alt="" coords="2893,101,2980,149"><area shape="rect" id="node23" href="module_MobileRobot_Giraff.html" title="MobileRobot_Giraff" alt="" coords="3004,101,3138,149"><area shape="rect" id="node24" href="module_MobileRobot_Pioneer.html" title="MobileRobot_Pioneer" alt="" coords="3163,101,3307,149"><area shape="rect" id="node25" href="module_MobileRobot_Segway.html" title="MobileRobot_Segway" alt="" coords="3332,101,3477,149"><area shape="rect" id="node26" href="module_MobileRobot_Simul.html" title="MobileRobot_Simul" alt="" coords="4098,101,4233,149"><area shape="poly" id="node50" href="var_KINECT1.html" title="KINECT1" alt="" coords="3860,221,3858,214,3852,207,3843,202,3833,199,3820,197,3808,199,3797,202,3789,207,3783,214,3781,221,3783,229,3789,235,3797,241,3808,244,3820,245,3833,244,3843,241,3852,235,3858,229"><area shape="rect" id="node27" href="module_MonoCamera.html" title="MonoCamera" alt="" coords="3683,101,3779,149"><area shape="rect" id="node28" href="module_MOX_SensorModel.html" title="MOX_SensorModel" alt="" coords="3803,101,3934,149"><area shape="rect" id="node29" href="module_MQTTMosquitto.html" title="MQTTMosquitto" alt="" coords="3958,101,4074,149"><area shape="rect" id="node30" href="module_NavigatorReactivePTG.html" title="NavigatorReactivePTG" alt="" coords="4365,293,4513,341"><area shape="rect" id="node31" href="module_NavigatorReactivePTG3D.html" title="NavigatorReactivePTG3D" alt="" coords="1918,293,2082,341"><area shape="poly" id="node51" href="var_SHUTDOWN.html" title="SHUTDOWN" alt="" coords="3051,29,3049,22,3042,15,3031,10,3018,7,3003,5,2988,7,2975,10,2964,15,2957,22,2955,29,2957,37,2964,43,2975,49,2988,52,3003,53,3018,52,3031,49,3042,43,3049,37"><area shape="rect" id="node32" href="module_NavigatorTopological.html" title="NavigatorTopological" alt="" coords="4257,101,4400,149"><area shape="rect" id="node33" href="module_Planner.html" title="Planner" alt="" coords="4424,101,4496,149"><area shape="rect" id="node34" href="module_RandomNavigator.html" title="RandomNavigator" alt="" coords="4520,101,4643,149"><area shape="rect" id="node35" href="module_RGBDSensorToReactive.html" title="RGBDSensorToReactive" alt="" coords="3502,101,3659,149"><area shape="poly" id="node49" href="var_IRD_WARNING.html" title="IRD_WARNING" alt="" coords="2069,221,2066,214,2058,207,2046,202,2030,199,2012,197,1995,199,1979,202,1966,207,1958,214,1956,221,1958,229,1966,235,1979,241,1995,244,2012,245,2030,244,2046,241,2058,235,2066,229"><area shape="rect" id="node36" href="module_RobotControlManager.html" title="RobotControlManager" alt="" coords="4718,101,4864,149"><area shape="rect" id="node37" href="module_RobotGUI.html" title="RobotGUI" alt="" coords="3781,293,3860,341"><area shape="rect" id="node38" href="module_SessionLogger.html" title="SessionLogger" alt="" coords="4889,101,4992,149"><area shape="rect" id="node39" href="module_SpeechSynth.html" title="SpeechSynth" alt="" coords="5016,101,5110,149"><area shape="rect" id="node40" href="module_StateCharts.html" title="StateCharts" alt="" coords="5134,101,5218,149"><area shape="rect" id="node41" href="module_TEST_extRGBDSensor.html" title="TEST_extRGBDSensor" alt="" coords="5243,101,5392,149"><area shape="rect" id="node42" href="module_TextInterpreter.html" title="TextInterpreter" alt="" coords="5417,101,5520,149"><area shape="rect" id="node43" href="module_TwitterAgent.html" title="TwitterAgent" alt="" coords="5544,101,5638,149"><area shape="rect" id="node44" href="module_VoiceFestival.html" title="VoiceFestival" alt="" coords="5662,101,5760,149"><area shape="rect" id="node45" href="module_VoiceVerbio.html" title="VoiceVerbio" alt="" coords="5784,101,5875,149"><area shape="rect" id="node46" href="module_Wifi_KeepCoverage.html" title="Wifi_KeepCoverage" alt="" coords="5899,101,6032,149"><area shape="rect" id="node47" href="module_Wifi_Monitor.html" title="Wifi_Monitor" alt="" coords="6056,101,6155,149"><area shape="rect" id="node48" href="module_WorldModel.html" title="WorldModel" alt="" coords="6180,101,6272,149"></map>
+<br><u>TODO list:</u><br>
+(None)
+<br><br><br><u>Changes log:</u><br>
+(None)
+<br><br>
+<br><br><hr><small>Page generated by <a href="https://github.com/jlblancoc/mooxygen" >Mooxygen 1.1.0</a> at Thu Jan 22 11:30:21 2015
+</small>
+<br><div align="right"> <a href="http://validator.w3.org/check?uri=referer"> <img border="0" src="http://www.w3.org/Icons/valid-html401-blue" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+</div>
+
+</body></html>

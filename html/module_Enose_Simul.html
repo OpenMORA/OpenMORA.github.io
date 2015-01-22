@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>OpenMORA</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+
+<!-- Page generated automatically by Mooxygen 1.1.0 -->
+<body>
+<div class="tabs">
+ <ul>
+  <li><a href="index.html"><span>Global overview</span></a></li>
+  <li class="current"><a href="modules.html"><span>All modules</span></a></li>
+  <li><a href="variables.html"><span>All variables</span></a></li>
+  <li><a href="commands.html"><span>All commands</span></a></li>
+  <li><a href="missions.html"><span>Mission files</span></a></li>
+  <li><a href="pipelines.html"><span>Pipelines</span></a></li>
+ </ul>
+</div><br>
+<br><center><h3> Module: Enose_Simul</h3></center><br>
+<u>Module info:</u><br>
+<br> <div align="center" ><table class="mooxygen" width="95%" >
+<tr>
+ <td align="center" bgcolor="lightgrey"> <b>Module name</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Short description</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Publishes</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Subscribes</b> </td>
+</tr>
+<tr>
+ <td align="center"> <a href="module_Enose_Simul.html" > <small>Enose_Simul</small> </a></td>
+ <td align="left"> <small>Electronic nose (E-nose) simulator module.</small> </td>
+ <td align="center"> <small><a href="var__SENSOR_LABEL_.html" >&lt;SENSOR_LABEL&gt;</a> , <a href="var_CURRENT_MAP_GAS_SIMUL.html" >CURRENT_MAP_GAS_SIMUL</a> , <a href="var_GT_GAS_SIMUL.html" >GT_GAS_SIMUL</a> </small> </td>
+ <td align="center"> <small><a href="var_LOCALIZATION.html" >LOCALIZATION</a> , <a href="var_SHUTDOWN.html" >SHUTDOWN</a> </small> </td>
+</tr>
+</table> </div>
+<br>
+<u>MOOS commands accepted by the module:</u><br><ul>
+<li>(None)</li>
+</ul><br>
+<u>Parameters accepted in the MOOS mission file:</u><br>
+<div align="center" ><table class="mooxygen" width="95%" >
+<tr>
+ <td align="center" bgcolor="lightgrey"> <b>Parameter</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Description</b> </td>
+</tr>
+<tr>
+ <td align="center"> <code>enose_noise_offset</code> </td>
+ <td> Offset noise to add to all readings (typ=0) </td>
+</tr>
+<tr>
+ <td align="center"> <code>enose_noise_std</code> </td>
+ <td> Additive gaussian noise (standard deviation)  (readings saturate to [0,1]) </td>
+</tr>
+<tr>
+ <td align="center"> <code>enose_pose_on_robot_x</code> </td>
+ <td> The (x,y) position on the robot </td>
+</tr>
+<tr>
+ <td align="center"> <code>enose_pose_on_robot_y</code> </td>
+ <td> The (x,y) position on the robot </td>
+</tr>
+<tr>
+ <td align="center"> <code>enose_tau_decay</code> </td>
+ <td> 1st order model constant (seconds) </td>
+</tr>
+<tr>
+ <td align="center"> <code>enose_tau_rise</code> </td>
+ <td> 1st order model constant (seconds) </td>
+</tr>
+<tr>
+ <td align="center"> <code>map_bitmap</code> </td>
+ <td> [bitmap] Path to the initial bitmap image used to initialize the gas concentration </td>
+</tr>
+<tr>
+ <td align="center"> <code>map_filename_prefix</code> </td>
+ <td> [GasMapModel_Dynamic] The prefix used for the filnames </td>
+</tr>
+<tr>
+ <td align="center"> <code>map_frameRate</code> </td>
+ <td> [GasMapModel_Dynamic] The frame rate at wich process the bitmaps (frames/seconds) </td>
+</tr>
+<tr>
+ <td align="center"> <code>map_gastype</code> </td>
+ <td> The ID of the gasMap. Usually is the model of a gas sensor (0x2620) </td>
+</tr>
+<tr>
+ <td align="center"> <code>map_init_from</code> </td>
+ <td> Possible values: &quot;bitmap&quot;, &quot;uniform&quot; </td>
+</tr>
+<tr>
+ <td align="center"> <code>map_resolution</code> </td>
+ <td> [uniform] meters/pixel </td>
+</tr>
+<tr>
+ <td align="center"> <code>map_sequence_folder</code> </td>
+ <td> [GasMapModel_Dynamic] The path to the folder containing the bitmap sequence. </td>
+</tr>
+<tr>
+ <td align="center"> <code>map_value</code> </td>
+ <td> [uniform] Value to asign to the uniform gasMap </td>
+</tr>
+<tr>
+ <td align="center"> <code>map_x0</code> </td>
+ <td> [uniform] Coordinates of the initial point (meters) </td>
+</tr>
+<tr>
+ <td align="center"> <code>map_x1</code> </td>
+ <td> [uniform] Coordinates of the final point (meters) </td>
+</tr>
+<tr>
+ <td align="center"> <code>map_y0</code> </td>
+ <td> [uniform] Coordinates of the initial point (meters) </td>
+</tr>
+<tr>
+ <td align="center"> <code>map_y1</code> </td>
+ <td> [uniform] Coordinates of the final point (meters) </td>
+</tr>
+<tr>
+ <td align="center"> <code>num_enoses</code> </td>
+ <td> The number of enoses to simulate.Note: all enoses are enabled to detect all typesof gases (i.e. all the individual maps simultaneously) </td>
+</tr>
+<tr>
+ <td align="center"> <code>num_gas_maps</code> </td>
+ <td> Number of gasMaps to simulate </td>
+</tr>
+<tr>
+ <td align="center"> <code>rate_refresh_gui</code> </td>
+ <td> In Hz: rate of resent gas map to GUI </td>
+</tr>
+<tr>
+ <td align="center"> <code>rate_sensor</code> </td>
+ <td> In Hz: rate of sensor measurements </td>
+</tr>
+<tr>
+ <td align="center"> <code>sensor_label</code> </td>
+ <td> The name given to the field &quot;Sensor_label&quot; in the generated CObservation, and also name of the MOOS variable to publish </td>
+</tr>
+<tr>
+ <td align="center"> <code>simulator</code> </td>
+ <td> The simulator type to be used. Existing classes are: GasMapModel_Static and GasMapModel_Dynamic </td>
+</tr>
+<tr>
+ <td align="center"> <code>voltage_max</code> </td>
+ <td> All sensor output concentrations data are normalized scaled by this value </td>
+</tr>
+</table></div>
+<br><u>Detailed description:</u><br>
+Electronic nose (E-nose) simulator module.This module implements different types of ground truth gas maps, and simulate the readings of different sensors (using a first order model).For information about the first order model see &quot;Overcoming the Slow Recovery of MOX Gas Sensors through a System Modeling Approach&quot; at http://mapir.isa.uma.es/jgmonroy/<br><br><u>Module graph:</u><br>
+<div align="center"> <img src="var_Enose_Simul.png" border="0" usemap="#Enose_Simul" alt="Enose_Simul"> </div>
+<map id="Enose_Simul" name="Enose_Simul"><area shape="rect" id="node1" href="module_Agenda.html" title="Agenda" alt="" coords="42,101,114,149"><area shape="rect" id="node2" href="module_Arm_Kinova.html" title="Arm_Kinova" alt="" coords="1109,101,1201,149"><area shape="rect" id="node3" href="module_AutoDocking_Camera.html" title="AutoDocking_Camera" alt="" coords="1226,101,1370,149"><area shape="rect" id="node4" href="module_AutoDocking_Laser.html" title="AutoDocking_Laser" alt="" coords="1395,101,1527,149"><area shape="rect" id="node5" href="module_BatteryManager.html" title="BatteryManager" alt="" coords="1551,101,1661,149"><area shape="rect" id="node6" href="module_CamControl_ImagingSource.html" title="CamControl_ImagingSource" alt="" coords="1686,101,1865,149"><area shape="rect" id="node7" href="module_DAQ_Advantech.html" title="DAQ_Advantech" alt="" coords="1889,101,2003,149"><area shape="rect" id="node8" href="module_DistributionMapping.html" title="DistributionMapping" alt="" coords="466,101,605,149"><area shape="poly" id="node52" href="var_LOCALIZATION.html" title="LOCALIZATION" alt="" coords="772,221,769,214,761,207,748,202,731,199,713,197,694,199,678,202,664,207,656,214,653,221,656,229,664,235,678,241,694,244,713,245,731,244,748,241,761,235,769,229"><area shape="rect" id="node9" href="module_Domotics_IpPower.html" title="Domotics_IpPower" alt="" coords="2027,101,2153,149"><area shape="rect" id="node10" href="module_eNeck.html" title="eNeck" alt="" coords="2177,101,2249,149"><area shape="rect" id="node11" href="module_Enose_Display.html" title="Enose_Display" alt="" coords="2273,101,2377,149"><area shape="rect" id="node12" href="module_Enose_MCE.html" title="Enose_MCE" alt="" coords="2401,101,2491,149"><area shape="rect" id="node13" href="module_Enose_Simul.html" title="Enose_Simul" alt="" coords="325,293,420,341"><area shape="poly" id="node49" href="var__SENSOR_LABEL_.html" title="&lt;SENSOR_LABEL&gt;" alt="" coords="140,413,137,406,127,399,112,394,93,391,73,389,52,391,33,394,18,399,9,406,5,413,9,421,18,427,33,433,52,436,73,437,93,436,112,433,127,427,137,421"><area shape="poly" id="node50" href="var_CURRENT_MAP_GAS_SIMUL.html" title="CURRENT_MAP_GAS_SIMUL" alt="" coords="385,413,380,406,366,399,345,394,317,391,287,389,257,391,230,394,208,399,195,406,190,413,195,421,208,427,230,433,257,436,287,437,317,436,345,433,366,427,380,421"><area shape="poly" id="node51" href="var_GT_GAS_SIMUL.html" title="GT_GAS_SIMUL" alt="" coords="530,413,528,406,519,399,506,394,489,391,470,389,451,391,434,394,421,399,412,406,409,413,412,421,421,427,434,433,451,436,470,437,489,436,506,433,519,427,528,421"><area shape="rect" id="node14" href="module_Executor.html" title="Executor" alt="" coords="495,293,567,341"><area shape="rect" id="node15" href="module_GenericSensor.html" title="GenericSensor" alt="" coords="31,197,131,245"><area shape="rect" id="node16" href="module_JoystickControl.html" title="JoystickControl" alt="" coords="2515,101,2625,149"><area shape="rect" id="node17" href="module_Kinect_Odometry.html" title="Kinect_Odometry" alt="" coords="2649,101,2768,149"><area shape="rect" id="node18" href="module_LibeliumWSN.html" title="LibeliumWSN" alt="" coords="2792,101,2892,149"><area shape="rect" id="node19" href="module_Localization2D_Fusion.html" title="Localization2D_Fusion" alt="" coords="629,101,780,149"><area shape="rect" id="node20" href="module_Localization2D_PF.html" title="Localization2D_PF" alt="" coords="2917,101,3045,149"><area shape="rect" id="node21" href="module_LookAtPoint.html" title="LookAtPoint" alt="" coords="591,293,685,341"><area shape="rect" id="node22" href="module_MapCreator.html" title="MapCreator" alt="" coords="3069,101,3156,149"><area shape="rect" id="node23" href="module_MobileRobot_Giraff.html" title="MobileRobot_Giraff" alt="" coords="3180,101,3315,149"><area shape="rect" id="node24" href="module_MobileRobot_Pioneer.html" title="MobileRobot_Pioneer" alt="" coords="3339,101,3483,149"><area shape="rect" id="node25" href="module_MobileRobot_Segway.html" title="MobileRobot_Segway" alt="" coords="3508,101,3653,149"><area shape="rect" id="node26" href="module_MobileRobot_Simul.html" title="MobileRobot_Simul" alt="" coords="3677,101,3812,149"><area shape="rect" id="node27" href="module_MonoCamera.html" title="MonoCamera" alt="" coords="3837,101,3933,149"><area shape="rect" id="node28" href="module_MOX_SensorModel.html" title="MOX_SensorModel" alt="" coords="3957,101,4087,149"><area shape="rect" id="node29" href="module_MQTTMosquitto.html" title="MQTTMosquitto" alt="" coords="760,293,876,341"><area shape="rect" id="node30" href="module_NavigatorReactivePTG.html" title="NavigatorReactivePTG" alt="" coords="900,293,1048,341"><area shape="rect" id="node31" href="module_NavigatorReactivePTG3D.html" title="NavigatorReactivePTG3D" alt="" coords="85,293,249,341"><area shape="poly" id="node53" href="var_SHUTDOWN.html" title="SHUTDOWN" alt="" coords="2433,29,2431,22,2424,15,2413,10,2400,7,2385,5,2370,7,2356,10,2345,15,2339,22,2336,29,2339,37,2345,43,2356,49,2370,52,2385,53,2400,52,2413,49,2424,43,2431,37"><area shape="rect" id="node32" href="module_NavigatorTopological.html" title="NavigatorTopological" alt="" coords="1072,293,1215,341"><area shape="rect" id="node33" href="module_Planner.html" title="Planner" alt="" coords="4111,101,4183,149"><area shape="rect" id="node34" href="module_RandomNavigator.html" title="RandomNavigator" alt="" coords="4207,101,4330,149"><area shape="rect" id="node35" href="module_RGBDSensorToReactive.html" title="RGBDSensorToReactive" alt="" coords="4354,101,4511,149"><area shape="rect" id="node36" href="module_RobotControlManager.html" title="RobotControlManager" alt="" coords="1239,293,1386,341"><area shape="rect" id="node37" href="module_RobotGUI.html" title="RobotGUI" alt="" coords="465,485,544,533"><area shape="rect" id="node38" href="module_SessionLogger.html" title="SessionLogger" alt="" coords="4536,101,4639,149"><area shape="rect" id="node39" href="module_SpeechSynth.html" title="SpeechSynth" alt="" coords="4663,101,4757,149"><area shape="rect" id="node40" href="module_StateCharts.html" title="StateCharts" alt="" coords="4781,101,4865,149"><area shape="rect" id="node41" href="module_TEST_extRGBDSensor.html" title="TEST_extRGBDSensor" alt="" coords="4890,101,5039,149"><area shape="rect" id="node42" href="module_TextInterpreter.html" title="TextInterpreter" alt="" coords="5064,101,5167,149"><area shape="rect" id="node43" href="module_TwitterAgent.html" title="TwitterAgent" alt="" coords="5191,101,5285,149"><area shape="rect" id="node44" href="module_VoiceFestival.html" title="VoiceFestival" alt="" coords="5309,101,5407,149"><area shape="rect" id="node45" href="module_VoiceVerbio.html" title="VoiceVerbio" alt="" coords="5431,101,5522,149"><area shape="rect" id="node46" href="module_Wifi_KeepCoverage.html" title="Wifi_KeepCoverage" alt="" coords="1410,293,1543,341"><area shape="rect" id="node47" href="module_Wifi_Monitor.html" title="Wifi_Monitor" alt="" coords="5546,101,5645,149"><area shape="rect" id="node48" href="module_WorldModel.html" title="WorldModel" alt="" coords="1568,293,1660,341"></map>
+<br><u>TODO list:</u><br>
+Consider the robot movement to modify the gas concentration arround it.Use a Computational Fluid Dynamics software to simulate the state of the gas at each instant, instead of use the basic image squence.<br><br><br><u>Changes log:</u><br>
+161-03-2012 Added Dynamic GasMap simulation, loading the state from a squence of images.<br><br>
+<br><br><hr><small>Page generated by <a href="https://github.com/jlblancoc/mooxygen" >Mooxygen 1.1.0</a> at Thu Jan 22 11:30:21 2015
+</small>
+<br><div align="right"> <a href="http://validator.w3.org/check?uri=referer"> <img border="0" src="http://www.w3.org/Icons/valid-html401-blue" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+</div>
+
+</body></html>

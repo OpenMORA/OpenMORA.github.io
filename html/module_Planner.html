@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>OpenMORA</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+
+<!-- Page generated automatically by Mooxygen 1.1.0 -->
+<body>
+<div class="tabs">
+ <ul>
+  <li><a href="index.html"><span>Global overview</span></a></li>
+  <li class="current"><a href="modules.html"><span>All modules</span></a></li>
+  <li><a href="variables.html"><span>All variables</span></a></li>
+  <li><a href="commands.html"><span>All commands</span></a></li>
+  <li><a href="missions.html"><span>Mission files</span></a></li>
+  <li><a href="pipelines.html"><span>Pipelines</span></a></li>
+ </ul>
+</div><br>
+<br><center><h3> Module: Planner</h3></center><br>
+<u>Module info:</u><br>
+<br> <div align="center" ><table class="mooxygen" width="95%" >
+<tr>
+ <td align="center" bgcolor="lightgrey"> <b>Module name</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Short description</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Publishes</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Subscribes</b> </td>
+</tr>
+<tr>
+ <td align="center"> <a href="module_Planner.html" > <small>Planner</small> </a></td>
+ <td align="left"> <small>A module that plans complex tasks into a sequence of small, simple routines.</small> </td>
+ <td align="center"> <small><a href="var__OpenMORA_VAR_.html" >&lt;OpenMORA_VAR&gt;</a> , <a href="var_IN_EXECUTION.html" >IN_EXECUTION</a> , <a href="var_PLAN_FINISHED.html" >PLAN_FINISHED</a> , <a href="var_TASK_PLANNED.html" >TASK_PLANNED</a> , <a href="var_TOPOLOGICAL_DESTINY.html" >TOPOLOGICAL_DESTINY</a> </small> </td>
+ <td align="center"> <small><a href="var_PATH.html" >PATH</a> , <a href="var_PERSON_LOCATION.html" >PERSON_LOCATION</a> , <a href="var_PLAN_FINISHED.html" >PLAN_FINISHED</a> , <a href="var_SHUTDOWN.html" >SHUTDOWN</a> , <a href="var_TASK_LIST.html" >TASK_LIST</a> </small> </td>
+</tr>
+</table> </div>
+<br>
+<u>MOOS commands accepted by the module:</u><br><ul>
+<li>(None)</li>
+</ul><br>
+<u>Parameters accepted in the MOOS mission file:</u><br>
+<div align="center" ><table class="mooxygen" width="95%" >
+<tr>
+ <td align="center" bgcolor="lightgrey"> <b>Parameter</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Description</b> </td>
+</tr>
+<tr>
+ <td align="center"> <code>actions_names</code> </td>
+ <td> The names of the Actions to load </td>
+</tr>
+<tr>
+ <td align="center"> <code>num_actions</code> </td>
+ <td>  </td>
+</tr>
+<tr>
+ <td align="center"> <code>PARAM_NAME</code> </td>
+ <td> PARAM DESCRIPTION IN ONE LINE </td>
+</tr>
+</table></div>
+<br><u>Detailed description:</u><br>
+A module that plans complex tasks into a sequence of small, simple routines.This module obtain a list of pending tasks from the Agenda module and tries to schedule them according to compatibilityand priority values. Each task is planned in a new thread which is closed when the task finished.Each task is decomposed in a list of actions (called plan), and send to the Executor module.Requiered modules: Agenda, StateCharts and Executor.<br><br><u>Module graph:</u><br>
+<div align="center"> <img src="var_Planner.png" border="0" usemap="#Planner" alt="Planner"> </div>
+<map id="Planner" name="Planner"><area shape="rect" id="node1" href="module_Agenda.html" title="Agenda" alt="" coords="4253,101,4325,149"><area shape="poly" id="node55" href="var_TASK_LIST.html" title="TASK_LIST" alt="" coords="4346,221,4344,214,4337,207,4327,202,4314,199,4300,197,4286,199,4273,202,4263,207,4256,214,4254,221,4256,229,4263,235,4273,241,4286,244,4300,245,4314,244,4327,241,4337,235,4344,229"><area shape="rect" id="node2" href="module_Arm_Kinova.html" title="Arm_Kinova" alt="" coords="502,101,594,149"><area shape="rect" id="node3" href="module_AutoDocking_Camera.html" title="AutoDocking_Camera" alt="" coords="619,101,763,149"><area shape="rect" id="node4" href="module_AutoDocking_Laser.html" title="AutoDocking_Laser" alt="" coords="787,101,919,149"><area shape="rect" id="node5" href="module_BatteryManager.html" title="BatteryManager" alt="" coords="943,101,1054,149"><area shape="rect" id="node6" href="module_CamControl_ImagingSource.html" title="CamControl_ImagingSource" alt="" coords="1079,101,1257,149"><area shape="rect" id="node7" href="module_DAQ_Advantech.html" title="DAQ_Advantech" alt="" coords="1281,101,1396,149"><area shape="rect" id="node8" href="module_DistributionMapping.html" title="DistributionMapping" alt="" coords="1420,101,1559,149"><area shape="rect" id="node9" href="module_Domotics_IpPower.html" title="Domotics_IpPower" alt="" coords="1583,101,1708,149"><area shape="rect" id="node10" href="module_eNeck.html" title="eNeck" alt="" coords="1732,101,1804,149"><area shape="rect" id="node11" href="module_Enose_Display.html" title="Enose_Display" alt="" coords="1828,101,1932,149"><area shape="rect" id="node12" href="module_Enose_MCE.html" title="Enose_MCE" alt="" coords="1956,101,2047,149"><area shape="rect" id="node13" href="module_Enose_Simul.html" title="Enose_Simul" alt="" coords="2071,101,2166,149"><area shape="rect" id="node14" href="module_Executor.html" title="Executor" alt="" coords="3848,485,3920,533"><area shape="poly" id="node53" href="var_PLAN_FINISHED.html" title="PLAN_FINISHED" alt="" coords="4255,605,4252,598,4243,591,4229,586,4212,583,4193,581,4175,583,4157,586,4144,591,4135,598,4132,605,4135,613,4144,619,4157,625,4175,628,4193,629,4212,628,4229,625,4243,619,4252,613"><area shape="rect" id="node15" href="module_GenericSensor.html" title="GenericSensor" alt="" coords="2190,101,2290,149"><area shape="rect" id="node16" href="module_JoystickControl.html" title="JoystickControl" alt="" coords="2315,101,2424,149"><area shape="rect" id="node17" href="module_Kinect_Odometry.html" title="Kinect_Odometry" alt="" coords="2449,101,2567,149"><area shape="rect" id="node18" href="module_LibeliumWSN.html" title="LibeliumWSN" alt="" coords="2591,101,2691,149"><area shape="rect" id="node19" href="module_Localization2D_Fusion.html" title="Localization2D_Fusion" alt="" coords="2715,101,2866,149"><area shape="rect" id="node20" href="module_Localization2D_PF.html" title="Localization2D_PF" alt="" coords="2891,101,3019,149"><area shape="rect" id="node21" href="module_LookAtPoint.html" title="LookAtPoint" alt="" coords="3043,101,3136,149"><area shape="rect" id="node22" href="module_MapCreator.html" title="MapCreator" alt="" coords="3161,101,3247,149"><area shape="rect" id="node23" href="module_MobileRobot_Giraff.html" title="MobileRobot_Giraff" alt="" coords="3271,101,3406,149"><area shape="rect" id="node24" href="module_MobileRobot_Pioneer.html" title="MobileRobot_Pioneer" alt="" coords="3431,101,3575,149"><area shape="rect" id="node25" href="module_MobileRobot_Segway.html" title="MobileRobot_Segway" alt="" coords="3599,101,3745,149"><area shape="rect" id="node26" href="module_MobileRobot_Simul.html" title="MobileRobot_Simul" alt="" coords="3769,101,3903,149"><area shape="rect" id="node27" href="module_MonoCamera.html" title="MonoCamera" alt="" coords="3928,101,4024,149"><area shape="rect" id="node28" href="module_MOX_SensorModel.html" title="MOX_SensorModel" alt="" coords="4048,101,4179,149"><area shape="rect" id="node29" href="module_MQTTMosquitto.html" title="MQTTMosquitto" alt="" coords="4638,869,4754,917"><area shape="rect" id="node30" href="module_NavigatorReactivePTG.html" title="NavigatorReactivePTG" alt="" coords="4350,101,4498,149"><area shape="rect" id="node31" href="module_NavigatorReactivePTG3D.html" title="NavigatorReactivePTG3D" alt="" coords="314,101,478,149"><area shape="poly" id="node54" href="var_SHUTDOWN.html" title="SHUTDOWN" alt="" coords="2921,29,2918,22,2911,15,2901,10,2887,7,2872,5,2857,7,2844,10,2833,15,2826,22,2824,29,2826,37,2833,43,2844,49,2857,52,2872,53,2887,52,2901,49,2911,43,2918,37"><area shape="rect" id="node32" href="module_NavigatorTopological.html" title="NavigatorTopological" alt="" coords="159,293,302,341"><area shape="rect" id="node33" href="module_Planner.html" title="Planner" alt="" coords="4168,293,4240,341"><area shape="poly" id="node49" href="var__OpenMORA_VAR_.html" title="&lt;OpenMORA_VAR&gt;" alt="" coords="4154,413,4151,406,4141,399,4126,394,4107,391,4085,389,4064,391,4045,394,4030,399,4020,406,4017,413,4020,421,4030,427,4045,433,4064,436,4085,437,4107,436,4126,433,4141,427,4151,421"><area shape="poly" id="node50" href="var_IN_EXECUTION.html" title="IN_EXECUTION" alt="" coords="3992,413,3990,406,3981,399,3968,394,3952,391,3933,389,3915,391,3899,394,3886,399,3877,406,3874,413,3877,421,3886,427,3899,433,3915,436,3933,437,3952,436,3968,433,3981,427,3990,421"><area shape="poly" id="node56" href="var_TASK_PLANNED.html" title="TASK_PLANNED" alt="" coords="4498,413,4495,406,4486,399,4473,394,4455,391,4436,389,4417,391,4400,394,4386,399,4377,406,4374,413,4377,421,4386,427,4400,433,4417,436,4436,437,4455,436,4473,433,4486,427,4495,421"><area shape="poly" id="node57" href="var_TOPOLOGICAL_DESTINY.html" title="TOPOLOGICAL_DESTINY" alt="" coords="4468,797,4464,790,4451,783,4432,778,4407,775,4380,773,4353,775,4329,778,4309,783,4297,790,4292,797,4297,805,4309,811,4329,817,4353,820,4380,821,4407,820,4432,817,4451,811,4464,805"><area shape="rect" id="node34" href="module_RandomNavigator.html" title="RandomNavigator" alt="" coords="4111,677,4233,725"><area shape="rect" id="node35" href="module_RGBDSensorToReactive.html" title="RGBDSensorToReactive" alt="" coords="4573,101,4731,149"><area shape="rect" id="node36" href="module_RobotControlManager.html" title="RobotControlManager" alt="" coords="3940,677,4087,725"><area shape="rect" id="node37" href="module_RobotGUI.html" title="RobotGUI" alt="" coords="3945,485,4023,533"><area shape="rect" id="node38" href="module_SessionLogger.html" title="SessionLogger" alt="" coords="4755,101,4858,149"><area shape="rect" id="node39" href="module_SpeechSynth.html" title="SpeechSynth" alt="" coords="4883,101,4976,149"><area shape="rect" id="node40" href="module_StateCharts.html" title="StateCharts" alt="" coords="4258,677,4342,725"><area shape="rect" id="node41" href="module_TEST_extRGBDSensor.html" title="TEST_extRGBDSensor" alt="" coords="5051,101,5200,149"><area shape="rect" id="node42" href="module_TextInterpreter.html" title="TextInterpreter" alt="" coords="5225,101,5327,149"><area shape="rect" id="node43" href="module_TwitterAgent.html" title="TwitterAgent" alt="" coords="5351,101,5446,149"><area shape="rect" id="node44" href="module_VoiceFestival.html" title="VoiceFestival" alt="" coords="5470,101,5567,149"><area shape="rect" id="node45" href="module_VoiceVerbio.html" title="VoiceVerbio" alt="" coords="5592,101,5683,149"><area shape="rect" id="node46" href="module_Wifi_KeepCoverage.html" title="Wifi_KeepCoverage" alt="" coords="5707,101,5840,149"><area shape="rect" id="node47" href="module_Wifi_Monitor.html" title="Wifi_Monitor" alt="" coords="5864,101,5963,149"><area shape="rect" id="node48" href="module_WorldModel.html" title="WorldModel" alt="" coords="198,101,290,149"><area shape="poly" id="node51" href="var_PATH.html" title="PATH" alt="" coords="280,221,278,214,273,207,265,202,255,199,244,197,233,199,223,202,215,207,210,214,208,221,210,229,215,235,223,241,233,244,244,245,255,244,265,241,273,235,278,229"><area shape="poly" id="node52" href="var_PERSON_LOCATION.html" title="PERSON_LOCATION" alt="" coords="2313,221,2310,214,2300,207,2284,202,2264,199,2241,197,2219,199,2199,202,2183,207,2173,214,2170,221,2173,229,2183,235,2199,241,2219,244,2241,245,2264,244,2284,241,2300,235,2310,229"></map>
+<br><u>TODO list:</u><br>
+Consider changin the way &quot;Actions&quot; are defined. ACTION = compatibility.Method IsCompatible() Is not implemented!! It alwasy return TRUE!!Method PathSearch(): Why arguments &quot;plan&quot; and &quot;execute&quot;? Also, this module MOVES the robot, so a better name would be &quot;GoToNodeLabel&quot;HPWA line 1059: 		ec.timestamp = taskid;		//JGMonroy: timestamp = taskID ????<br><br><br><u>Changes log:</u><br>
+(None)
+<br><br>
+<br><br><hr><small>Page generated by <a href="https://github.com/jlblancoc/mooxygen" >Mooxygen 1.1.0</a> at Thu Jan 22 11:30:21 2015
+</small>
+<br><div align="right"> <a href="http://validator.w3.org/check?uri=referer"> <img border="0" src="http://www.w3.org/Icons/valid-html401-blue" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+</div>
+
+</body></html>

@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>OpenMORA</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+
+<!-- Page generated automatically by Mooxygen 1.1.0 -->
+<body>
+<div class="tabs">
+ <ul>
+  <li><a href="index.html"><span>Global overview</span></a></li>
+  <li class="current"><a href="modules.html"><span>All modules</span></a></li>
+  <li><a href="variables.html"><span>All variables</span></a></li>
+  <li><a href="commands.html"><span>All commands</span></a></li>
+  <li><a href="missions.html"><span>Mission files</span></a></li>
+  <li><a href="pipelines.html"><span>Pipelines</span></a></li>
+ </ul>
+</div><br>
+<br><center><h3> Module: StereoFlyCap</h3></center><br>
+<u>Module info:</u><br>
+<br> <div align="center" ><table class="mooxygen" width="95%" >
+<tr>
+ <td align="center" bgcolor="lightgrey"> <b>Module name</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Short description</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Publishes</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Subscribes</b> </td>
+</tr>
+<tr>
+ <td align="center"> <a href="module_StereoFlyCap.html" > <small>StereoFlyCap</small> </a></td>
+ <td align="left"> <small>Stereo camera with two FlyCapture cameras plus a Claraquino board for sync trigger.</small> </td>
+ <td align="center"> <small><a href="var_CLARAQUINO_T1_FREQ.html" >CLARAQUINO_T1_FREQ</a> , <a href="var_MORA_IMAGES_DIR.html" >MORA_IMAGES_DIR</a> , <a href="var_STEREO1_OBS.html" >STEREO1_OBS</a> </small> </td>
+ <td align="center"> <small><a href="var_CLARAQUINO_LAST_CMD_STATUS.html" >CLARAQUINO_LAST_CMD_STATUS</a> </small> </td>
+</tr>
+</table> </div>
+<br>
+<u>MOOS commands accepted by the module:</u><br><ul>
+<li>(None)</li>
+</ul><br>
+<u>Parameters accepted in the MOOS mission file:</u><br>
+<div align="center" ><table class="mooxygen" width="95%" >
+<tr>
+ <td align="center" bgcolor="lightgrey"> <b>Parameter</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Description</b> </td>
+</tr>
+<tr>
+ <td align="center"> <code>CAM_CALIB_FILE</code> </td>
+ <td> An external config filename with the stereo calib data, in the format expected by mrpt::utils::TStereoCamera </td>
+</tr>
+<tr>
+ <td align="center"> <code>IMAGES_DIR</code> </td>
+ <td> (Default:&quot;StereoFlyCap_Images&quot;) Output directory for image (temporary) files in externally-stored mrpt::utils::CImage </td>
+</tr>
+<tr>
+ <td align="center"> <code>IMAGES_DIR_APPEND_TIMEDATE</code> </td>
+ <td> (Default=true) If true, will append date &amp; time to the images dir name </td>
+</tr>
+<tr>
+ <td align="center"> <code>IMAGES_RATE</code> </td>
+ <td> Frequency of images synch signal (Hz) </td>
+</tr>
+<tr>
+ <td align="center"> <code>IMAGES_SKIP_COMPRESS</code> </td>
+ <td> (default=false) If set to &quot;true&quot;, image compression while serializing will be disabled (useful when saving to shared memory). </td>
+</tr>
+<tr>
+ <td align="center"> <code>IMGS_QUEUE_MAX_LENGTH</code> </td>
+ <td> (Default=100) Max number of images in the temporary directory / shared memory </td>
+</tr>
+</table></div>
+<br><u>Detailed description:</u><br>
+Stereo camera with two FlyCapture cameras plus a Claraquino board for sync trigger.<br>The camera configuration must be specified in the .moos config block, in the format expectedby <a href="http://reference.mrpt.org/svn/classmrpt_1_1hwdrivers_1_1_c_camera_sensor.html">mrpt::hwdrivers::CCamera</a>.<br><br><u>Module graph:</u><br>
+<div align="center"> <img src="var_StereoFlyCap.png" border="0" usemap="#StereoFlyCap" alt="StereoFlyCap"> </div>
+<map id="StereoFlyCap" name="StereoFlyCap"><area shape="rect" id="node1" href="module_ChessboardDetector.html" title="ChessboardDetector" alt="" coords="194,197,325,245"><area shape="rect" id="node2" href="module_Claraquino.html" title="Claraquino" alt="" coords="402,197,485,245"><area shape="poly" id="node7" href="var_CLARAQUINO_LAST_CMD_STATUS.html" title="CLARAQUINO_LAST_CMD_STATUS" alt="" coords="611,317,605,310,588,303,562,298,529,295,493,293,456,295,423,298,397,303,380,310,375,317,380,325,397,331,423,337,456,340,493,341,529,340,562,337,588,331,605,325"><area shape="rect" id="node3" href="module_MonoCamera.html" title="MonoCamera" alt="" coords="19,5,115,53"><area shape="poly" id="node9" href="var_MORA_IMAGES_DIR.html" title="MORA_IMAGES_DIR" alt="" coords="181,125,177,118,167,111,150,106,130,103,107,101,85,103,64,106,48,111,38,118,34,125,38,133,48,139,64,145,85,148,107,149,130,148,150,145,167,139,177,133"><area shape="rect" id="node4" href="module_RawlogPlay.html" title="RawlogPlay" alt="" coords="139,5,227,53"><area shape="rect" id="node5" href="module_StereoFlyCap.html" title="StereoFlyCap" alt="" coords="313,5,409,53"><area shape="poly" id="node8" href="var_CLARAQUINO_T1_FREQ.html" title="CLARAQUINO_T1_FREQ" alt="" coords="506,125,502,118,490,111,471,106,448,103,422,101,396,103,373,106,354,111,342,118,338,125,342,133,354,139,373,145,396,148,422,149,448,148,471,145,490,139,502,133"><area shape="poly" id="node10" href="var_STEREO1_OBS.html" title="STEREO1_OBS" alt="" coords="315,125,312,118,304,111,292,106,276,103,259,101,242,103,227,106,215,111,207,118,204,125,207,133,215,139,227,145,242,148,259,149,276,148,292,145,304,139,312,133"><area shape="rect" id="node6" href="module_StereoOdometry_common.html" title="StereoOdometry_common" alt="" coords="5,197,169,245"></map>
+<br><u>TODO list:</u><br>
+(None)
+<br><br><br><u>Changes log:</u><br>
+(None)
+<br><br>
+<br><br><hr><small>Page generated by <a href="https://github.com/jlblancoc/mooxygen" >Mooxygen 1.1.0</a> at Thu Jan 22 11:30:21 2015
+</small>
+<br><div align="right"> <a href="http://validator.w3.org/check?uri=referer"> <img border="0" src="http://www.w3.org/Icons/valid-html401-blue" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+</div>
+
+</body></html>

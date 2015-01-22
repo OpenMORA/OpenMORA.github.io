@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>OpenMORA</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+
+<!-- Page generated automatically by Mooxygen 1.1.0 -->
+<body>
+<div class="tabs">
+ <ul>
+  <li><a href="index.html"><span>Global overview</span></a></li>
+  <li class="current"><a href="modules.html"><span>All modules</span></a></li>
+  <li><a href="variables.html"><span>All variables</span></a></li>
+  <li><a href="commands.html"><span>All commands</span></a></li>
+  <li><a href="missions.html"><span>Mission files</span></a></li>
+  <li><a href="pipelines.html"><span>Pipelines</span></a></li>
+ </ul>
+</div><br>
+<br><center><h3> Module: Localization2D_PF</h3></center><br>
+<u>Module info:</u><br>
+<br> <div align="center" ><table class="mooxygen" width="95%" >
+<tr>
+ <td align="center" bgcolor="lightgrey"> <b>Module name</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Short description</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Publishes</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Subscribes</b> </td>
+</tr>
+<tr>
+ <td align="center"> <a href="module_Localization2D_PF.html" > <small>Localization2D_PF</small> </a></td>
+ <td align="left"> <small>Monte-Carlo localization for a mobile robot within a known map.</small> </td>
+ <td align="center"> <small><a href="var_CURRENT_MAP_GRIDMAP.html" >CURRENT_MAP_GRIDMAP</a> , <a href="var_EST_GOODNESS.html" >EST_GOODNESS</a> , <a href="var_LOCALIZATION_COV_PF.html" >LOCALIZATION_COV_PF</a> , <a href="var_LOCALIZATION_PARTICLES.html" >LOCALIZATION_PARTICLES</a> , <a href="var_LOCALIZATION_PF.html" >LOCALIZATION_PF</a> , <a href="var_ODO_REFERENCE.html" >ODO_REFERENCE</a> </small> </td>
+ <td align="center"> <small><a href="var_LASER1.html" >LASER1</a> , <a href="var_LASER2.html" >LASER2</a> , <a href="var_LASER3.html" >LASER3</a> , <a href="var_ODOMETRY.html" >ODOMETRY</a> , <a href="var_RELOCALIZE_IN_AREA.html" >RELOCALIZE_IN_AREA</a> , <a href="var_SHUTDOWN.html" >SHUTDOWN</a> </small> </td>
+</tr>
+</table> </div>
+<br>
+<u>MOOS commands accepted by the module:</u><br><ul>
+<li><a href="cmd_RESTART.html" >RESTART</a></li>
+</ul><br>
+<u>Parameters accepted in the MOOS mission file:</u><br>
+<div align="center" ><table class="mooxygen" width="95%" >
+<tr>
+ <td align="center" bgcolor="lightgrey"> <b>Parameter</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Description</b> </td>
+</tr>
+<tr>
+ <td align="center"> <code>gridmap_image_cx</code> </td>
+ <td> When using gridmap_image_file, the X pixel where the (0,0) origin is at. </td>
+</tr>
+<tr>
+ <td align="center"> <code>gridmap_image_cy</code> </td>
+ <td> When using gridmap_image_file, the Y pixel where the (0,0) origin is at. </td>
+</tr>
+<tr>
+ <td align="center"> <code>gridmap_image_file</code> </td>
+ <td> An image to load a gridmap from. </td>
+</tr>
+<tr>
+ <td align="center"> <code>gridmap_image_res</code> </td>
+ <td> When using gridmap_image_file, the size in meters of each pixel. </td>
+</tr>
+<tr>
+ <td align="center"> <code>simplemap_file</code> </td>
+ <td> A .simplemap to load the map from. </td>
+</tr>
+<tr>
+ <td align="center"> <code>X_MAX</code> </td>
+ <td> The rectangle where a uniform pdf of particles is initialized for global localization. </td>
+</tr>
+<tr>
+ <td align="center"> <code>X_MIN</code> </td>
+ <td> The rectangle where a uniform pdf of particles is initialized for global localization. </td>
+</tr>
+<tr>
+ <td align="center"> <code>Y_MAX</code> </td>
+ <td> The rectangle where a uniform pdf of particles is initialized for global localization. </td>
+</tr>
+<tr>
+ <td align="center"> <code>Y_MIN</code> </td>
+ <td> The rectangle where a uniform pdf of particles is initialized for global localization. </td>
+</tr>
+</table></div>
+<br><u>Detailed description:</u><br>
+Monte-Carlo localization for a mobile robot within a known map.This module takes a metric map (e.g. grid map) and perform global localizationand pose tracking of the robot using an adaptive number of particles.<br><br><u>Module graph:</u><br>
+<div align="center"> <img src="var_Localization2D_PF.png" border="0" usemap="#Localization2D_PF" alt="Localization2D_PF"> </div>
+<map id="Localization2D_PF" name="Localization2D_PF"><area shape="rect" id="node1" href="module_Agenda.html" title="Agenda" alt="" coords="6053,101,6125,149"><area shape="rect" id="node2" href="module_Arm_Kinova.html" title="Arm_Kinova" alt="" coords="5,101,97,149"><area shape="rect" id="node3" href="module_AutoDocking_Camera.html" title="AutoDocking_Camera" alt="" coords="122,101,266,149"><area shape="rect" id="node4" href="module_AutoDocking_Laser.html" title="AutoDocking_Laser" alt="" coords="291,101,423,149"><area shape="rect" id="node5" href="module_BatteryManager.html" title="BatteryManager" alt="" coords="447,101,557,149"><area shape="rect" id="node6" href="module_CamControl_ImagingSource.html" title="CamControl_ImagingSource" alt="" coords="582,101,761,149"><area shape="rect" id="node7" href="module_DAQ_Advantech.html" title="DAQ_Advantech" alt="" coords="785,101,899,149"><area shape="rect" id="node8" href="module_DistributionMapping.html" title="DistributionMapping" alt="" coords="923,101,1062,149"><area shape="rect" id="node9" href="module_Domotics_IpPower.html" title="Domotics_IpPower" alt="" coords="1086,101,1211,149"><area shape="rect" id="node10" href="module_eCarOdometry.html" title="eCarOdometry" alt="" coords="2986,101,3087,149"><area shape="poly" id="node59" href="var_ODOMETRY.html" title="ODOMETRY" alt="" coords="3262,221,3260,214,3253,207,3242,202,3229,199,3214,197,3199,199,3186,202,3175,207,3168,214,3166,221,3168,229,3175,235,3186,241,3199,244,3214,245,3229,244,3242,241,3253,235,3260,229"><area shape="rect" id="node11" href="module_eNeck.html" title="eNeck" alt="" coords="1235,101,1307,149"><area shape="rect" id="node12" href="module_Enose_Display.html" title="Enose_Display" alt="" coords="1331,101,1435,149"><area shape="rect" id="node13" href="module_Enose_MCE.html" title="Enose_MCE" alt="" coords="1459,101,1550,149"><area shape="rect" id="node14" href="module_Enose_Simul.html" title="Enose_Simul" alt="" coords="1575,101,1669,149"><area shape="rect" id="node15" href="module_Executor.html" title="Executor" alt="" coords="1694,101,1766,149"><area shape="rect" id="node16" href="module_GenericSensor.html" title="GenericSensor" alt="" coords="1791,101,1891,149"><area shape="rect" id="node17" href="module_JoystickControl.html" title="JoystickControl" alt="" coords="1915,101,2025,149"><area shape="rect" id="node18" href="module_Kinect_Odometry.html" title="Kinect_Odometry" alt="" coords="2049,101,2168,149"><area shape="rect" id="node19" href="module_LibeliumWSN.html" title="LibeliumWSN" alt="" coords="2192,101,2292,149"><area shape="rect" id="node20" href="module_Localization2D_Fusion.html" title="Localization2D_Fusion" alt="" coords="2717,485,2868,533"><area shape="rect" id="node21" href="module_Localization2D_PF.html" title="Localization2D_PF" alt="" coords="3167,293,3295,341"><area shape="poly" id="node50" href="var_CURRENT_MAP_GRIDMAP.html" title="CURRENT_MAP_GRIDMAP" alt="" coords="3339,413,3335,406,3322,399,3302,394,3277,391,3249,389,3221,391,3195,394,3175,399,3162,406,3158,413,3162,421,3175,427,3195,433,3221,436,3249,437,3277,436,3302,433,3322,427,3335,421"><area shape="poly" id="node51" href="var_EST_GOODNESS.html" title="EST_GOODNESS" alt="" coords="3753,413,3750,406,3742,399,3728,394,3711,391,3693,389,3674,391,3657,394,3644,399,3635,406,3632,413,3635,421,3644,427,3657,433,3674,436,3693,437,3711,436,3728,433,3742,427,3750,421"><area shape="poly" id="node55" href="var_LOCALIZATION_COV_PF.html" title="LOCALIZATION_COV_PF" alt="" coords="3134,413,3129,406,3117,399,3098,394,3074,391,3047,389,3021,391,2997,394,2978,399,2965,406,2961,413,2965,421,2978,427,2997,433,3021,436,3047,437,3074,436,3098,433,3117,427,3129,421"><area shape="poly" id="node56" href="var_LOCALIZATION_PARTICLES.html" title="LOCALIZATION_PARTICLES" alt="" coords="3557,413,3553,406,3539,399,3518,394,3491,391,3461,389,3431,391,3404,394,3382,399,3369,406,3364,413,3369,421,3382,427,3404,433,3431,436,3461,437,3491,436,3518,433,3539,427,3553,421"><area shape="poly" id="node57" href="var_LOCALIZATION_PF.html" title="LOCALIZATION_PF" alt="" coords="2784,413,2780,406,2770,399,2755,394,2736,391,2714,389,2692,391,2673,394,2658,399,2648,406,2644,413,2648,421,2658,427,2673,433,2692,436,2714,437,2736,436,2755,433,2770,427,2780,421"><area shape="poly" id="node58" href="var_ODO_REFERENCE.html" title="ODO_REFERENCE" alt="" coords="2938,413,2935,406,2925,399,2911,394,2893,391,2873,389,2853,391,2834,394,2820,399,2811,406,2808,413,2811,421,2820,427,2834,433,2853,436,2873,437,2893,436,2911,433,2925,427,2935,421"><area shape="rect" id="node22" href="module_LookAtPoint.html" title="LookAtPoint" alt="" coords="2418,101,2511,149"><area shape="rect" id="node23" href="module_MapCreator.html" title="MapCreator" alt="" coords="2536,101,2623,149"><area shape="rect" id="node24" href="module_MobileRobot_Giraff.html" title="MobileRobot_Giraff" alt="" coords="3547,101,3681,149"><area shape="rect" id="node25" href="module_MobileRobot_Pioneer.html" title="MobileRobot_Pioneer" alt="" coords="2647,101,2791,149"><area shape="rect" id="node26" href="module_MobileRobot_Segway.html" title="MobileRobot_Segway" alt="" coords="2816,101,2961,149"><area shape="rect" id="node27" href="module_MobileRobot_Simul.html" title="MobileRobot_Simul" alt="" coords="3112,101,3247,149"><area shape="rect" id="node28" href="module_MonoCamera.html" title="MonoCamera" alt="" coords="3271,101,3367,149"><area shape="rect" id="node29" href="module_MOX_SensorModel.html" title="MOX_SensorModel" alt="" coords="3391,101,3522,149"><area shape="rect" id="node30" href="module_MQTTMosquitto.html" title="MQTTMosquitto" alt="" coords="5980,293,6096,341"><area shape="poly" id="node60" href="var_RELOCALIZE_IN_AREA.html" title="RELOCALIZE_IN_AREA" alt="" coords="3678,605,3674,598,3662,591,3644,586,3621,583,3595,581,3570,583,3547,586,3529,591,3517,598,3513,605,3517,613,3529,619,3547,625,3570,628,3595,629,3621,628,3644,625,3662,619,3674,613"><area shape="rect" id="node31" href="module_NavigatorReactivePTG.html" title="NavigatorReactivePTG" alt="" coords="3604,293,3752,341"><area shape="rect" id="node32" href="module_NavigatorReactivePTG3D.html" title="NavigatorReactivePTG3D" alt="" coords="3860,485,4024,533"><area shape="poly" id="node61" href="var_SHUTDOWN.html" title="SHUTDOWN" alt="" coords="3297,29,3295,22,3288,15,3277,10,3264,7,3249,5,3234,7,3220,10,3210,15,3203,22,3200,29,3203,37,3210,43,3220,49,3234,52,3249,53,3264,52,3277,49,3288,43,3295,37"><area shape="rect" id="node33" href="module_NavigatorTopological.html" title="NavigatorTopological" alt="" coords="3757,101,3900,149"><area shape="rect" id="node34" href="module_Planner.html" title="Planner" alt="" coords="3925,101,3997,149"><area shape="rect" id="node35" href="module_RandomNavigator.html" title="RandomNavigator" alt="" coords="4021,101,4143,149"><area shape="rect" id="node36" href="module_RGBDSensorToReactive.html" title="RGBDSensorToReactive" alt="" coords="4167,101,4325,149"><area shape="rect" id="node37" href="module_RobotControlManager.html" title="RobotControlManager" alt="" coords="4349,101,4495,149"><area shape="rect" id="node38" href="module_RobotGUI.html" title="RobotGUI" alt="" coords="3451,485,3529,533"><area shape="rect" id="node39" href="module_SessionLogger.html" title="SessionLogger" alt="" coords="4520,101,4623,149"><area shape="rect" id="node40" href="module_SpeechSynth.html" title="SpeechSynth" alt="" coords="4647,101,4741,149"><area shape="rect" id="node41" href="module_StateCharts.html" title="StateCharts" alt="" coords="4765,101,4849,149"><area shape="rect" id="node42" href="module_TEST_extRGBDSensor.html" title="TEST_extRGBDSensor" alt="" coords="4874,101,5023,149"><area shape="rect" id="node43" href="module_TextInterpreter.html" title="TextInterpreter" alt="" coords="5048,101,5151,149"><area shape="rect" id="node44" href="module_TwitterAgent.html" title="TwitterAgent" alt="" coords="5175,101,5269,149"><area shape="rect" id="node45" href="module_VoiceFestival.html" title="VoiceFestival" alt="" coords="5293,101,5391,149"><area shape="rect" id="node46" href="module_VoiceVerbio.html" title="VoiceVerbio" alt="" coords="5415,101,5506,149"><area shape="rect" id="node47" href="module_Wifi_KeepCoverage.html" title="Wifi_KeepCoverage" alt="" coords="5530,101,5663,149"><area shape="rect" id="node48" href="module_Wifi_Monitor.html" title="Wifi_Monitor" alt="" coords="5687,101,5786,149"><area shape="rect" id="node49" href="module_WorldModel.html" title="WorldModel" alt="" coords="5811,101,5903,149"><area shape="poly" id="node52" href="var_LASER1.html" title="LASER1" alt="" coords="3927,221,3926,214,3920,207,3912,202,3902,199,3891,197,3880,199,3870,202,3862,207,3857,214,3855,221,3857,229,3862,235,3870,241,3880,244,3891,245,3902,244,3912,241,3920,235,3926,229"><area shape="poly" id="node53" href="var_LASER2.html" title="LASER2" alt="" coords="3829,221,3827,214,3822,207,3814,202,3804,199,3793,197,3782,199,3772,202,3764,207,3758,214,3757,221,3758,229,3764,235,3772,241,3782,244,3793,245,3804,244,3814,241,3822,235,3827,229"><area shape="poly" id="node54" href="var_LASER3.html" title="LASER3" alt="" coords="2491,221,2490,214,2484,207,2476,202,2466,199,2455,197,2444,199,2434,202,2426,207,2421,214,2419,221,2421,229,2426,235,2434,241,2444,244,2455,245,2466,244,2476,241,2484,235,2490,229"></map>
+<br><u>TODO list:</u><br>
+(None)
+<br><br><br><u>Changes log:</u><br>
+(None)
+<br><br>
+<br><br><hr><small>Page generated by <a href="https://github.com/jlblancoc/mooxygen" >Mooxygen 1.1.0</a> at Thu Jan 22 11:30:21 2015
+</small>
+<br><div align="right"> <a href="http://validator.w3.org/check?uri=referer"> <img border="0" src="http://www.w3.org/Icons/valid-html401-blue" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+</div>
+
+</body></html>

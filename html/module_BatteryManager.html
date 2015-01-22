@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>OpenMORA</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+
+<!-- Page generated automatically by Mooxygen 1.1.0 -->
+<body>
+<div class="tabs">
+ <ul>
+  <li><a href="index.html"><span>Global overview</span></a></li>
+  <li class="current"><a href="modules.html"><span>All modules</span></a></li>
+  <li><a href="variables.html"><span>All variables</span></a></li>
+  <li><a href="commands.html"><span>All commands</span></a></li>
+  <li><a href="missions.html"><span>Mission files</span></a></li>
+  <li><a href="pipelines.html"><span>Pipelines</span></a></li>
+ </ul>
+</div><br>
+<br><center><h3> Module: BatteryManager</h3></center><br>
+<u>Module info:</u><br>
+<br> <div align="center" ><table class="mooxygen" width="95%" >
+<tr>
+ <td align="center" bgcolor="lightgrey"> <b>Module name</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Short description</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Publishes</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Subscribes</b> </td>
+</tr>
+<tr>
+ <td align="center"> <a href="module_BatteryManager.html" > <small>BatteryManager</small> </a></td>
+ <td align="left"> <small>Module to monitoring the status of a battery.</small> </td>
+ <td align="center"> <small><a href="var_BATTERY_MANAGER_CHARGER_I.html" >BATTERY_MANAGER_CHARGER_I</a> , <a href="var_BATTERY_MANAGER_COMPLETE_RECHARGE.html" >BATTERY_MANAGER_COMPLETE_RECHARGE</a> , <a href="var_BATTERY_MANAGER_ENERGY_COMPSUMPTION.html" >BATTERY_MANAGER_ENERGY_COMPSUMPTION</a> , <a href="var_BATTERY_MANAGER_I.html" >BATTERY_MANAGER_I</a> , <a href="var_BATTERY_MANAGER_IS_CHARGING.html" >BATTERY_MANAGER_IS_CHARGING</a> , <a href="var_BATTERY_MANAGER_LEVEL.html" >BATTERY_MANAGER_LEVEL</a> , <a href="var_BATTERY_MANAGER_LIFE.html" >BATTERY_MANAGER_LIFE</a> , <a href="var_BATTERY_MANAGER_V.html" >BATTERY_MANAGER_V</a> , <a href="var_BATTERY_MANAGER_V_FLOAT.html" >BATTERY_MANAGER_V_FLOAT</a> , <a href="var_NEW_TASK.html" >NEW_TASK</a> , <a href="var_SAY.html" >SAY</a> </small> </td>
+ <td align="center"> <small><a href="var_Battery_I.html" >Battery_I</a> , <a href="var_BATTERY_V.html" >BATTERY_V</a> , <a href="var_Charger_I.html" >Charger_I</a> , <a href="var_SHUTDOWN.html" >SHUTDOWN</a> </small> </td>
+</tr>
+</table> </div>
+<br>
+<u>MOOS commands accepted by the module:</u><br><ul>
+<li>(None)</li>
+</ul><br>
+<u>Parameters accepted in the MOOS mission file:</u><br>
+<div align="center" ><table class="mooxygen" width="95%" >
+<tr>
+ <td align="center" bgcolor="lightgrey"> <b>Parameter</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Description</b> </td>
+</tr>
+<tr>
+ <td align="center"> <code>Battery_I</code> </td>
+ <td> Name of the MOOS variable containing the intensity of the battery to monitor. </td>
+</tr>
+<tr>
+ <td align="center"> <code>Battery_V</code> </td>
+ <td> Name of the MOOS variable containing the voltage of the battery to monitor. </td>
+</tr>
+<tr>
+ <td align="center"> <code>Charger_I</code> </td>
+ <td> Name of the MOOS variable containing the charge intensity of the battery to monitor. </td>
+</tr>
+<tr>
+ <td align="center"> <code>Conv_Battery_I</code> </td>
+ <td> Battery Intensity Conversion Factor </td>
+</tr>
+<tr>
+ <td align="center"> <code>Conv_Battery_Life</code> </td>
+ <td> Duration of a 10% charge of the battery with 1Ah of consumption (Units = Minutes) </td>
+</tr>
+<tr>
+ <td align="center"> <code>Conv_Charger_I</code> </td>
+ <td> Charger Intensity Conversion Factor </td>
+</tr>
+<tr>
+ <td align="center"> <code>Conv_Conv_Battery_V</code> </td>
+ <td> Battery Voltage Conversion Factor </td>
+</tr>
+<tr>
+ <td align="center"> <code>Holding_Current</code> </td>
+ <td> Charger Holding Current (Units = Amps) </td>
+</tr>
+<tr>
+ <td align="center"> <code>Level_0</code> </td>
+ <td> Voltage Level 0, 0% Charged	 	(Units = Volts) Discharged </td>
+</tr>
+<tr>
+ <td align="center"> <code>Level_1</code> </td>
+ <td> Voltage Level 1, 10% Charged 	(Units = Volts)	Obligatory recharge level </td>
+</tr>
+<tr>
+ <td align="center"> <code>Level_10</code> </td>
+ <td> Voltage Level 10, 100% Charged (Units = Volts) Full Charged </td>
+</tr>
+<tr>
+ <td align="center"> <code>Level_2</code> </td>
+ <td> Voltage Level 2, 20% Charged 	(Units = Volts) Necessary recharge level </td>
+</tr>
+<tr>
+ <td align="center"> <code>Level_3</code> </td>
+ <td> Voltage Level 3, 30% Charged 	(Units = Volts) </td>
+</tr>
+<tr>
+ <td align="center"> <code>Level_4</code> </td>
+ <td> Voltage Level 4, 40% Charged 	(Units = Volts) </td>
+</tr>
+<tr>
+ <td align="center"> <code>Level_5</code> </td>
+ <td> Voltage Level 5, 50% Charged 	(Units = Volts) </td>
+</tr>
+<tr>
+ <td align="center"> <code>Level_6</code> </td>
+ <td> Voltage Level 6, 60% Charged 	(Units = Volts) </td>
+</tr>
+<tr>
+ <td align="center"> <code>Level_7</code> </td>
+ <td> Voltage Level 7, 70% Charged 	(Units = Volts) </td>
+</tr>
+<tr>
+ <td align="center"> <code>Level_8</code> </td>
+ <td> Voltage Level 8, 80% Charged 	(Units = Volts) </td>
+</tr>
+<tr>
+ <td align="center"> <code>Level_9</code> </td>
+ <td> Voltage Level 9, 90% Charged 	(Units = Volts) </td>
+</tr>
+<tr>
+ <td align="center"> <code>Min_I_Charge</code> </td>
+ <td> Minimum level of intensity for detecting the charging </td>
+</tr>
+<tr>
+ <td align="center"> <code>Offset_Battery_V</code> </td>
+ <td> An offset to apply to the readed voltage </td>
+</tr>
+</table></div>
+<br><u>Detailed description:</u><br>
+Module to monitoring the status of a battery.It reads the battery votltage and intensity from MOOS variables (provided by the corresponding hardware module, robot base, DAQ, etc.),and provides information related to the percentage of battery charge, estimated life, charging status, etc.<br><br><u>Module graph:</u><br>
+<div align="center"> <img src="var_BatteryManager.png" border="0" usemap="#BatteryManager" alt="BatteryManager"> </div>
+<map id="BatteryManager" name="BatteryManager"><area shape="rect" id="node1" href="module_Agenda.html" title="Agenda" alt="" coords="2359,677,2431,725"><area shape="rect" id="node2" href="module_Arm_Kinova.html" title="Arm_Kinova" alt="" coords="245,101,337,149"><area shape="rect" id="node3" href="module_AutoDocking_Camera.html" title="AutoDocking_Camera" alt="" coords="362,101,506,149"><area shape="rect" id="node4" href="module_AutoDocking_Laser.html" title="AutoDocking_Laser" alt="" coords="3561,485,3693,533"><area shape="rect" id="node5" href="module_BatteryManager.html" title="BatteryManager" alt="" coords="2909,293,3020,341"><area shape="poly" id="node51" href="var_BATTERY_MANAGER_CHARGER_I.html" title="BATTERY_MANAGER_CHARGER_I" alt="" coords="1690,413,1685,406,1668,399,1643,394,1611,391,1575,389,1540,391,1508,394,1482,399,1466,406,1460,413,1466,421,1482,427,1508,433,1540,436,1575,437,1611,436,1643,433,1668,427,1685,421"><area shape="poly" id="node52" href="var_BATTERY_MANAGER_COMPLETE_RECHARGE.html" title="BATTERY_MANAGER_COMPLETE_RECHARGE" alt="" coords="2015,413,2008,406,1986,399,1953,394,1911,391,1865,389,1818,391,1776,394,1743,399,1722,406,1714,413,1722,421,1743,427,1776,433,1818,436,1865,437,1911,436,1953,433,1986,427,2008,421"><area shape="poly" id="node53" href="var_BATTERY_MANAGER_ENERGY_COMPSUMPTION.html" title="BATTERY_MANAGER_ENERGY_COMPSUMPTION" alt="" coords="2357,413,2349,406,2326,399,2291,394,2247,391,2198,389,2149,391,2105,394,2070,399,2047,406,2039,413,2047,421,2070,427,2105,433,2149,436,2198,437,2247,436,2291,433,2326,427,2349,421"><area shape="poly" id="node54" href="var_BATTERY_MANAGER_I.html" title="BATTERY_MANAGER_I" alt="" coords="2546,413,2542,406,2530,399,2512,394,2489,391,2463,389,2438,391,2415,394,2397,399,2385,406,2381,413,2385,421,2397,427,2415,433,2438,436,2463,437,2489,436,2512,433,2530,427,2542,421"><area shape="poly" id="node55" href="var_BATTERY_MANAGER_IS_CHARGING.html" title="BATTERY_MANAGER_IS_CHARGING" alt="" coords="3734,413,3728,406,3711,399,3684,394,3650,391,3613,389,3575,391,3541,394,3514,399,3497,406,3491,413,3497,421,3514,427,3541,433,3575,436,3613,437,3650,436,3684,433,3711,427,3728,421"><area shape="poly" id="node56" href="var_BATTERY_MANAGER_LEVEL.html" title="BATTERY_MANAGER_LEVEL" alt="" coords="2771,413,2766,406,2751,399,2729,394,2701,391,2670,389,2639,391,2611,394,2589,399,2574,406,2569,413,2574,421,2589,427,2611,433,2639,436,2670,437,2701,436,2729,433,2751,427,2766,421"><area shape="poly" id="node57" href="var_BATTERY_MANAGER_LIFE.html" title="BATTERY_MANAGER_LIFE" alt="" coords="2982,413,2978,406,2965,399,2944,394,2918,391,2889,389,2860,391,2834,394,2813,399,2799,406,2795,413,2799,421,2813,427,2834,433,2860,436,2889,437,2918,436,2944,433,2965,427,2978,421"><area shape="poly" id="node58" href="var_BATTERY_MANAGER_V.html" title="BATTERY_MANAGER_V" alt="" coords="3176,413,3172,406,3160,399,3141,394,3118,391,3091,389,3065,391,3042,394,3023,399,3011,406,3007,413,3011,421,3023,427,3042,433,3065,436,3091,437,3118,436,3141,433,3160,427,3172,421"><area shape="poly" id="node59" href="var_BATTERY_MANAGER_V_FLOAT.html" title="BATTERY_MANAGER_V_FLOAT" alt="" coords="3467,413,3462,406,3447,399,3423,394,3393,391,3359,389,3326,391,3296,394,3272,399,3256,406,3251,413,3256,421,3272,427,3296,433,3326,436,3359,437,3393,436,3423,433,3447,427,3462,421"><area shape="poly" id="node62" href="var_NEW_TASK.html" title="NEW_TASK" alt="" coords="4672,605,4669,598,4663,591,4652,586,4639,583,4625,581,4610,583,4597,586,4587,591,4580,598,4578,605,4580,613,4587,619,4597,625,4610,628,4625,629,4639,628,4652,625,4663,619,4669,613"><area shape="poly" id="node63" href="var_SAY.html" title="SAY" alt="" coords="4801,413,4799,406,4794,399,4786,394,4776,391,4765,389,4754,391,4744,394,4736,399,4730,406,4729,413,4730,421,4736,427,4744,433,4754,436,4765,437,4776,436,4786,433,4794,427,4799,421"><area shape="rect" id="node6" href="module_CamControl_ImagingSource.html" title="CamControl_ImagingSource" alt="" coords="741,101,919,149"><area shape="rect" id="node7" href="module_DAQ_Advantech.html" title="DAQ_Advantech" alt="" coords="943,101,1058,149"><area shape="rect" id="node8" href="module_DistributionMapping.html" title="DistributionMapping" alt="" coords="1082,101,1221,149"><area shape="rect" id="node9" href="module_Domotics_IpPower.html" title="Domotics_IpPower" alt="" coords="1245,101,1370,149"><area shape="rect" id="node10" href="module_eNeck.html" title="eNeck" alt="" coords="1394,101,1466,149"><area shape="rect" id="node11" href="module_Enose_Display.html" title="Enose_Display" alt="" coords="1490,101,1594,149"><area shape="rect" id="node12" href="module_Enose_MCE.html" title="Enose_MCE" alt="" coords="1618,101,1709,149"><area shape="rect" id="node13" href="module_Enose_Simul.html" title="Enose_Simul" alt="" coords="1733,101,1828,149"><area shape="rect" id="node14" href="module_Executor.html" title="Executor" alt="" coords="4630,293,4702,341"><area shape="rect" id="node15" href="module_GenericSensor.html" title="GenericSensor" alt="" coords="2021,101,2121,149"><area shape="rect" id="node16" href="module_JoystickControl.html" title="JoystickControl" alt="" coords="2146,101,2255,149"><area shape="rect" id="node17" href="module_Kinect_Odometry.html" title="Kinect_Odometry" alt="" coords="2280,101,2399,149"><area shape="rect" id="node18" href="module_LibeliumWSN.html" title="LibeliumWSN" alt="" coords="2423,101,2523,149"><area shape="rect" id="node19" href="module_Localization2D_Fusion.html" title="Localization2D_Fusion" alt="" coords="2547,101,2697,149"><area shape="rect" id="node20" href="module_Localization2D_PF.html" title="Localization2D_PF" alt="" coords="2722,101,2850,149"><area shape="rect" id="node21" href="module_LookAtPoint.html" title="LookAtPoint" alt="" coords="2874,101,2967,149"><area shape="rect" id="node22" href="module_MapCreator.html" title="MapCreator" alt="" coords="2992,101,3079,149"><area shape="rect" id="node23" href="module_MobileRobot_Giraff.html" title="MobileRobot_Giraff" alt="" coords="581,101,716,149"><area shape="poly" id="node60" href="var_BATTERY_V.html" title="BATTERY_V" alt="" coords="1723,221,1721,214,1714,207,1703,202,1689,199,1674,197,1659,199,1645,202,1634,207,1627,214,1625,221,1627,229,1634,235,1645,241,1659,244,1674,245,1689,244,1703,241,1714,235,1721,229"><area shape="rect" id="node24" href="module_MobileRobot_Pioneer.html" title="MobileRobot_Pioneer" alt="" coords="1853,101,1997,149"><area shape="rect" id="node25" href="module_MobileRobot_Segway.html" title="MobileRobot_Segway" alt="" coords="3205,101,3351,149"><area shape="rect" id="node26" href="module_MobileRobot_Simul.html" title="MobileRobot_Simul" alt="" coords="3375,101,3509,149"><area shape="rect" id="node27" href="module_MonoCamera.html" title="MonoCamera" alt="" coords="3534,101,3630,149"><area shape="rect" id="node28" href="module_MOX_SensorModel.html" title="MOX_SensorModel" alt="" coords="3654,101,3785,149"><area shape="rect" id="node29" href="module_MQTTMosquitto.html" title="MQTTMosquitto" alt="" coords="3733,485,3849,533"><area shape="rect" id="node30" href="module_NavigatorReactivePTG.html" title="NavigatorReactivePTG" alt="" coords="3860,101,4008,149"><area shape="rect" id="node31" href="module_NavigatorReactivePTG3D.html" title="NavigatorReactivePTG3D" alt="" coords="5,101,169,149"><area shape="poly" id="node64" href="var_SHUTDOWN.html" title="SHUTDOWN" alt="" coords="3124,29,3121,22,3114,15,3104,10,3090,7,3075,5,3060,7,3047,10,3036,15,3029,22,3027,29,3029,37,3036,43,3047,49,3060,52,3075,53,3090,52,3104,49,3114,43,3121,37"><area shape="rect" id="node32" href="module_NavigatorTopological.html" title="NavigatorTopological" alt="" coords="4032,101,4175,149"><area shape="rect" id="node33" href="module_Planner.html" title="Planner" alt="" coords="4199,101,4271,149"><area shape="rect" id="node34" href="module_RandomNavigator.html" title="RandomNavigator" alt="" coords="4314,197,4437,245"><area shape="rect" id="node35" href="module_RGBDSensorToReactive.html" title="RGBDSensorToReactive" alt="" coords="4346,101,4503,149"><area shape="rect" id="node36" href="module_RobotControlManager.html" title="RobotControlManager" alt="" coords="3018,485,3165,533"><area shape="rect" id="node37" href="module_SessionLogger.html" title="SessionLogger" alt="" coords="4579,101,4681,149"><area shape="rect" id="node38" href="module_SkypeComm.html" title="SkypeComm" alt="" coords="5175,485,5267,533"><area shape="rect" id="node39" href="module_SkypeComm_WindowsAPI.html" title="SkypeComm_WindowsAPI" alt="" coords="5342,485,5513,533"><area shape="rect" id="node40" href="module_SpeechSynth.html" title="SpeechSynth" alt="" coords="4765,485,4858,533"><area shape="rect" id="node41" href="module_StateCharts.html" title="StateCharts" alt="" coords="5149,293,5233,341"><area shape="rect" id="node42" href="module_TEST_extRGBDSensor.html" title="TEST_extRGBDSensor" alt="" coords="4807,101,4957,149"><area shape="rect" id="node43" href="module_TextInterpreter.html" title="TextInterpreter" alt="" coords="5253,197,5356,245"><area shape="rect" id="node44" href="module_TwitterAgent.html" title="TwitterAgent" alt="" coords="5032,101,5127,149"><area shape="rect" id="node45" href="module_VoiceFestival.html" title="VoiceFestival" alt="" coords="4961,485,5059,533"><area shape="rect" id="node46" href="module_VoiceVerbio.html" title="VoiceVerbio" alt="" coords="4538,485,4629,533"><area shape="rect" id="node47" href="module_Wifi_KeepCoverage.html" title="Wifi_KeepCoverage" alt="" coords="4726,293,4859,341"><area shape="rect" id="node48" href="module_Wifi_Monitor.html" title="Wifi_Monitor" alt="" coords="5303,101,5402,149"><area shape="rect" id="node49" href="module_WorldModel.html" title="WorldModel" alt="" coords="5427,101,5519,149"><area shape="poly" id="node50" href="var_Battery_I.html" title="Battery_I" alt="" coords="3228,221,3227,214,3221,207,3213,202,3203,199,3191,197,3180,199,3170,202,3161,207,3156,214,3154,221,3156,229,3161,235,3170,241,3180,244,3191,245,3203,244,3213,241,3221,235,3227,229"><area shape="poly" id="node61" href="var_Charger_I.html" title="Charger_I" alt="" coords="3004,221,3002,214,2996,207,2988,202,2977,199,2965,197,2953,199,2942,202,2933,207,2927,214,2925,221,2927,229,2933,235,2942,241,2953,244,2965,245,2977,244,2988,241,2996,235,3002,229"></map>
+<br><u>TODO list:</u><br>
+(None)
+<br><br><br><u>Changes log:</u><br>
+(None)
+<br><br>
+<br><br><hr><small>Page generated by <a href="https://github.com/jlblancoc/mooxygen" >Mooxygen 1.1.0</a> at Thu Jan 22 11:30:21 2015
+</small>
+<br><div align="right"> <a href="http://validator.w3.org/check?uri=referer"> <img border="0" src="http://www.w3.org/Icons/valid-html401-blue" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+</div>
+
+</body></html>

@@ -1,0 +1,8 @@
+digraph "zoomcam_zoom" {
+ node [shape=box,style=filled, fillcolor="#B0B0B0",fontsize=10];
+"CamControl_ImagingSource" [fillcolor="white", URL="module_CamControl_ImagingSource.html"];
+ node [shape=ellipse,style=filled, fillcolor="#EEEEEE",fontsize=8];
+"zoomcam_zoom" [URL="var_zoomcam_zoom.html"];
+ node [shape=box,style=filled, fillcolor="#B0B0B0",fontsize=10];
+"zoomcam_zoom"->"CamControl_ImagingSource";
+}

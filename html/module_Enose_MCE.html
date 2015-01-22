@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>OpenMORA</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+
+<!-- Page generated automatically by Mooxygen 1.1.0 -->
+<body>
+<div class="tabs">
+ <ul>
+  <li><a href="index.html"><span>Global overview</span></a></li>
+  <li class="current"><a href="modules.html"><span>All modules</span></a></li>
+  <li><a href="variables.html"><span>All variables</span></a></li>
+  <li><a href="commands.html"><span>All commands</span></a></li>
+  <li><a href="missions.html"><span>Mission files</span></a></li>
+  <li><a href="pipelines.html"><span>Pipelines</span></a></li>
+ </ul>
+</div><br>
+<br><center><h3> Module: Enose_MCE</h3></center><br>
+<u>Module info:</u><br>
+<br> <div align="center" ><table class="mooxygen" width="95%" >
+<tr>
+ <td align="center" bgcolor="lightgrey"> <b>Module name</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Short description</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Publishes</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Subscribes</b> </td>
+</tr>
+<tr>
+ <td align="center"> <a href="module_Enose_MCE.html" > <small>Enose_MCE</small> </a></td>
+ <td align="left"> <small>Interface with the Multi Chamber Electronic nose (MCE-nose).</small> </td>
+ <td align="center"> <small><a href="var_ENOSE_MCE_AC_OBS.html" >ENOSE_MCE_AC_OBS</a> , <a href="var_ENOSE_MCE_OBS.html" >ENOSE_MCE_OBS</a> </small> </td>
+ <td align="center"> <small><a href="var_ENOSE_MCE_SWITCH_CHAMBER.html" >ENOSE_MCE_SWITCH_CHAMBER</a> , <a href="var_SHUTDOWN.html" >SHUTDOWN</a> </small> </td>
+</tr>
+</table> </div>
+<br>
+<u>MOOS commands accepted by the module:</u><br><ul>
+<li>(None)</li>
+</ul><br>
+<u>Parameters accepted in the MOOS mission file:</u><br>
+<div align="center" ><table class="mooxygen" width="95%" >
+<tr>
+ <td align="center" bgcolor="lightgrey"> <b>Parameter</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Description</b> </td>
+</tr>
+<tr>
+ <td align="center"> <code>&lt;GenericSensor&gt;</code> </td>
+ <td> The MRPT CGenericSensor parameters </td>
+</tr>
+<tr>
+ <td align="center"> <code>decayValue</code> </td>
+ <td> Decay value(%) in the &quot;active chamber&quot; readings required in the Adaptive switching mode, to consider that a decay phase is starting.(maxValue - maxValue*decayValue/100.0 ) </td>
+</tr>
+<tr>
+ <td align="center"> <code>delay</code> </td>
+ <td> Delay to introduce to the gas readings as consequence of the pneumatic circuit and electronics (seconds) </td>
+</tr>
+<tr>
+ <td align="center"> <code>min_diff</code> </td>
+ <td> Minimum difference (value) that must exists between the readings of the actual active chamber (AC) and the candidate Chamber to switch at, to allow switching. </td>
+</tr>
+<tr>
+ <td align="center"> <code>minActiveTime</code> </td>
+ <td> Minimum time (seconds) a chamber must be active (odor flooded). In periodic Switching (strategy = 1) this is the Period. </td>
+</tr>
+<tr>
+ <td align="center"> <code>num_chambers</code> </td>
+ <td> The number of chambers in the e-nose device (see the OpenMORA wiki for more info) </td>
+</tr>
+<tr>
+ <td align="center"> <code>num_sensors_chamber</code> </td>
+ <td> The number of gas sensors to be read on each chamber. </td>
+</tr>
+<tr>
+ <td align="center"> <code>sensorID</code> </td>
+ <td> The sensor type (0x2620, 0x2601, etc) to be taken into account for the switching strategy. If sensorID = 0 the mean of all sensors is considered. </td>
+</tr>
+<tr>
+ <td align="center"> <code>strategy</code> </td>
+ <td> The MCE-nose Switching strategy: 0(No Switching), 1(Periodic Switching), 2(Adaptive), 3(Calibration), 4(Dual mode). (see the OpenMORA wiki for more info) </td>
+</tr>
+</table></div>
+<br><u>Detailed description:</u><br>
+Interface with the Multi Chamber Electronic nose (MCE-nose).This module comunicates with the MCE-nose through a MRPT CBoardENoses interface1- Implements different switching strategies for the selection of the new Active Chamber2- Gets the ID of the actual Active chamber (chamber being odor flooded).3- Shares the readings with other OpenMORA modules.<br><br><u>Module graph:</u><br>
+<div align="center"> <img src="var_Enose_MCE.png" border="0" usemap="#Enose_MCE" alt="Enose_MCE"> </div>
+<map id="Enose_MCE" name="Enose_MCE"><area shape="rect" id="node1" href="module_Agenda.html" title="Agenda" alt="" coords="424,101,496,149"><area shape="rect" id="node2" href="module_Arm_Kinova.html" title="Arm_Kinova" alt="" coords="520,101,612,149"><area shape="rect" id="node3" href="module_AutoDocking_Camera.html" title="AutoDocking_Camera" alt="" coords="637,101,781,149"><area shape="rect" id="node4" href="module_AutoDocking_Laser.html" title="AutoDocking_Laser" alt="" coords="806,101,938,149"><area shape="rect" id="node5" href="module_BatteryManager.html" title="BatteryManager" alt="" coords="962,101,1072,149"><area shape="rect" id="node6" href="module_CamControl_ImagingSource.html" title="CamControl_ImagingSource" alt="" coords="1097,101,1276,149"><area shape="rect" id="node7" href="module_DAQ_Advantech.html" title="DAQ_Advantech" alt="" coords="1300,101,1414,149"><area shape="rect" id="node8" href="module_DistributionMapping.html" title="DistributionMapping" alt="" coords="1438,101,1577,149"><area shape="rect" id="node9" href="module_Domotics_IpPower.html" title="Domotics_IpPower" alt="" coords="1601,101,1726,149"><area shape="rect" id="node10" href="module_eNeck.html" title="eNeck" alt="" coords="1750,101,1822,149"><area shape="rect" id="node11" href="module_Enose_Display.html" title="Enose_Display" alt="" coords="1846,101,1950,149"><area shape="rect" id="node12" href="module_Enose_MCE.html" title="Enose_MCE" alt="" coords="120,101,210,149"><area shape="poly" id="node48" href="var_ENOSE_MCE_AC_OBS.html" title="ENOSE_MCE_AC_OBS" alt="" coords="160,221,156,214,145,207,128,202,106,199,82,197,59,199,37,202,20,207,9,214,5,221,9,229,20,235,37,241,59,244,82,245,106,244,128,241,145,235,156,229"><area shape="poly" id="node49" href="var_ENOSE_MCE_OBS.html" title="ENOSE_MCE_OBS" alt="" coords="314,221,311,214,302,207,287,202,269,199,249,197,229,199,211,202,197,207,187,214,184,221,187,229,197,235,211,241,229,244,249,245,269,244,287,241,302,235,311,229"><area shape="rect" id="node13" href="module_Enose_Simul.html" title="Enose_Simul" alt="" coords="1975,101,2070,149"><area shape="rect" id="node14" href="module_Executor.html" title="Executor" alt="" coords="2094,101,2166,149"><area shape="rect" id="node15" href="module_GenericSensor.html" title="GenericSensor" alt="" coords="2191,101,2291,149"><area shape="rect" id="node16" href="module_JoystickControl.html" title="JoystickControl" alt="" coords="2316,101,2425,149"><area shape="rect" id="node17" href="module_Kinect_Odometry.html" title="Kinect_Odometry" alt="" coords="2450,101,2568,149"><area shape="rect" id="node18" href="module_LibeliumWSN.html" title="LibeliumWSN" alt="" coords="2592,101,2692,149"><area shape="rect" id="node19" href="module_Localization2D_Fusion.html" title="Localization2D_Fusion" alt="" coords="2716,101,2867,149"><area shape="rect" id="node20" href="module_Localization2D_PF.html" title="Localization2D_PF" alt="" coords="2892,101,3020,149"><area shape="rect" id="node21" href="module_LookAtPoint.html" title="LookAtPoint" alt="" coords="3044,101,3137,149"><area shape="rect" id="node22" href="module_MapCreator.html" title="MapCreator" alt="" coords="3162,101,3248,149"><area shape="rect" id="node23" href="module_MobileRobot_Giraff.html" title="MobileRobot_Giraff" alt="" coords="3272,101,3407,149"><area shape="rect" id="node24" href="module_MobileRobot_Pioneer.html" title="MobileRobot_Pioneer" alt="" coords="3432,101,3576,149"><area shape="rect" id="node25" href="module_MobileRobot_Segway.html" title="MobileRobot_Segway" alt="" coords="3600,101,3746,149"><area shape="rect" id="node26" href="module_MobileRobot_Simul.html" title="MobileRobot_Simul" alt="" coords="3770,101,3904,149"><area shape="rect" id="node27" href="module_MonoCamera.html" title="MonoCamera" alt="" coords="3929,101,4025,149"><area shape="rect" id="node28" href="module_MOX_SensorModel.html" title="MOX_SensorModel" alt="" coords="4049,101,4180,149"><area shape="rect" id="node29" href="module_MQTTMosquitto.html" title="MQTTMosquitto" alt="" coords="4204,101,4320,149"><area shape="rect" id="node30" href="module_NavigatorReactivePTG.html" title="NavigatorReactivePTG" alt="" coords="4344,101,4492,149"><area shape="rect" id="node31" href="module_NavigatorReactivePTG3D.html" title="NavigatorReactivePTG3D" alt="" coords="235,101,399,149"><area shape="poly" id="node51" href="var_SHUTDOWN.html" title="SHUTDOWN" alt="" coords="3320,29,3318,22,3311,15,3300,10,3287,7,3272,5,3257,7,3243,10,3233,15,3226,22,3223,29,3226,37,3233,43,3243,49,3257,52,3272,53,3287,52,3300,49,3311,43,3318,37"><area shape="rect" id="node32" href="module_NavigatorTopological.html" title="NavigatorTopological" alt="" coords="4516,101,4659,149"><area shape="rect" id="node33" href="module_Planner.html" title="Planner" alt="" coords="4684,101,4756,149"><area shape="rect" id="node34" href="module_RandomNavigator.html" title="RandomNavigator" alt="" coords="4780,101,4902,149"><area shape="rect" id="node35" href="module_RGBDSensorToReactive.html" title="RGBDSensorToReactive" alt="" coords="4926,101,5084,149"><area shape="rect" id="node36" href="module_RobotControlManager.html" title="RobotControlManager" alt="" coords="5108,101,5254,149"><area shape="rect" id="node37" href="module_SessionLogger.html" title="SessionLogger" alt="" coords="5279,101,5382,149"><area shape="rect" id="node38" href="module_SpeechSynth.html" title="SpeechSynth" alt="" coords="5406,101,5500,149"><area shape="rect" id="node39" href="module_StateCharts.html" title="StateCharts" alt="" coords="5524,101,5608,149"><area shape="rect" id="node40" href="module_TEST_extRGBDSensor.html" title="TEST_extRGBDSensor" alt="" coords="5633,101,5782,149"><area shape="rect" id="node41" href="module_TextInterpreter.html" title="TextInterpreter" alt="" coords="5807,101,5910,149"><area shape="rect" id="node42" href="module_TwitterAgent.html" title="TwitterAgent" alt="" coords="5934,101,6028,149"><area shape="rect" id="node43" href="module_VoiceFestival.html" title="VoiceFestival" alt="" coords="6052,101,6150,149"><area shape="rect" id="node44" href="module_VoiceVerbio.html" title="VoiceVerbio" alt="" coords="6174,101,6265,149"><area shape="rect" id="node45" href="module_Wifi_KeepCoverage.html" title="Wifi_KeepCoverage" alt="" coords="6289,101,6422,149"><area shape="rect" id="node46" href="module_Wifi_Monitor.html" title="Wifi_Monitor" alt="" coords="6446,101,6545,149"><area shape="rect" id="node47" href="module_WorldModel.html" title="WorldModel" alt="" coords="6570,101,6662,149"><area shape="poly" id="node50" href="var_ENOSE_MCE_SWITCH_CHAMBER.html" title="ENOSE_MCE_SWITCH_CHAMBER" alt="" coords="276,29,271,22,255,15,230,10,199,7,165,5,131,7,100,10,75,15,59,22,54,29,59,37,75,43,100,49,131,52,165,53,199,52,230,49,255,43,271,37"></map>
+<br><u>TODO list:</u><br>
+Separate the MOXmodel in a different module, reading the variables published by this module and generating the MOXmodel output.<br><br><br><u>Changes log:</u><br>
+(None)
+<br><br>
+<br><br><hr><small>Page generated by <a href="https://github.com/jlblancoc/mooxygen" >Mooxygen 1.1.0</a> at Thu Jan 22 11:30:21 2015
+</small>
+<br><div align="right"> <a href="http://validator.w3.org/check?uri=referer"> <img border="0" src="http://www.w3.org/Icons/valid-html401-blue" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+</div>
+
+</body></html>

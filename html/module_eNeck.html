@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>OpenMORA</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+
+<!-- Page generated automatically by Mooxygen 1.1.0 -->
+<body>
+<div class="tabs">
+ <ul>
+  <li><a href="index.html"><span>Global overview</span></a></li>
+  <li class="current"><a href="modules.html"><span>All modules</span></a></li>
+  <li><a href="variables.html"><span>All variables</span></a></li>
+  <li><a href="commands.html"><span>All commands</span></a></li>
+  <li><a href="missions.html"><span>Mission files</span></a></li>
+  <li><a href="pipelines.html"><span>Pipelines</span></a></li>
+ </ul>
+</div><br>
+<br><center><h3> Module: eNeck</h3></center><br>
+<u>Module info:</u><br>
+<br> <div align="center" ><table class="mooxygen" width="95%" >
+<tr>
+ <td align="center" bgcolor="lightgrey"> <b>Module name</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Short description</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Publishes</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Subscribes</b> </td>
+</tr>
+<tr>
+ <td align="center"> <a href="module_eNeck.html" > <small>eNeck</small> </a></td>
+ <td align="left"> <small>Module to control the e-Neck board on our ActiveMedia Pioneer robot Sancho.</small> </td>
+ <td align="center"> <small></small> </td>
+ <td align="center"> <small><a href="var_NECKMSG.html" >NECKMSG</a> , <a href="var_SHUTDOWN.html" >SHUTDOWN</a> </small> </td>
+</tr>
+</table> </div>
+<br>
+<u>MOOS commands accepted by the module:</u><br><ul>
+<li>(None)</li>
+</ul><br>
+<u>Parameters accepted in the MOOS mission file:</u><br>
+<div align="center" ><table class="mooxygen" width="95%" >
+<tr>
+ <td align="center" bgcolor="lightgrey"> <b>Parameter</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Description</b> </td>
+</tr>
+<tr>
+ <td align="center"> <code>filterDepth</code> </td>
+ <td> The number of previous angles to be taken into account for computing the current angle (when filtering is active) </td>
+</tr>
+<tr>
+ <td align="center"> <code>offsetServo0</code> </td>
+ <td> The default offset (if any) of servo Nº0 </td>
+</tr>
+<tr>
+ <td align="center"> <code>offsetServo1</code> </td>
+ <td> The default offset of (if any) servo Nº1 </td>
+</tr>
+<tr>
+ <td align="center"> <code>offsetServo2</code> </td>
+ <td> The default offset of (if any) servo Nº2 </td>
+</tr>
+<tr>
+ <td align="center"> <code>truncateFactor</code> </td>
+ <td> The maximum and minimum angle of the neck will be set to +-truncatefactor*pi/2 </td>
+</tr>
+</table></div>
+<br><u>Detailed description:</u><br>
+Module to control the e-Neck board on our ActiveMedia Pioneer robot Sancho.This module enables communications with the e-Neck board which controls up to three servos.<br><br><u>Module graph:</u><br>
+<div align="center"> <img src="var_eNeck.png" border="0" usemap="#eNeck" alt="eNeck"> </div>
+<map id="eNeck" name="eNeck"><area shape="rect" id="node1" href="module_Agenda.html" title="Agenda" alt="" coords="39,101,111,149"><area shape="rect" id="node2" href="module_Arm_Kinova.html" title="Arm_Kinova" alt="" coords="135,101,227,149"><area shape="rect" id="node3" href="module_AutoDocking_Camera.html" title="AutoDocking_Camera" alt="" coords="252,101,396,149"><area shape="rect" id="node4" href="module_AutoDocking_Laser.html" title="AutoDocking_Laser" alt="" coords="421,101,553,149"><area shape="rect" id="node5" href="module_BatteryManager.html" title="BatteryManager" alt="" coords="577,101,687,149"><area shape="rect" id="node6" href="module_CamControl_ImagingSource.html" title="CamControl_ImagingSource" alt="" coords="712,101,891,149"><area shape="rect" id="node7" href="module_DAQ_Advantech.html" title="DAQ_Advantech" alt="" coords="915,101,1029,149"><area shape="rect" id="node8" href="module_DistributionMapping.html" title="DistributionMapping" alt="" coords="1053,101,1192,149"><area shape="rect" id="node9" href="module_Domotics_IpPower.html" title="Domotics_IpPower" alt="" coords="1216,101,1341,149"><area shape="rect" id="node10" href="module_eNeck.html" title="eNeck" alt="" coords="1408,293,1480,341"><area shape="rect" id="node11" href="module_Enose_Display.html" title="Enose_Display" alt="" coords="1493,101,1597,149"><area shape="rect" id="node12" href="module_Enose_MCE.html" title="Enose_MCE" alt="" coords="1621,101,1712,149"><area shape="rect" id="node13" href="module_Enose_Simul.html" title="Enose_Simul" alt="" coords="1737,101,1831,149"><area shape="rect" id="node14" href="module_Executor.html" title="Executor" alt="" coords="1856,101,1928,149"><area shape="rect" id="node15" href="module_GenericSensor.html" title="GenericSensor" alt="" coords="1953,101,2053,149"><area shape="rect" id="node16" href="module_JoystickControl.html" title="JoystickControl" alt="" coords="2077,101,2187,149"><area shape="rect" id="node17" href="module_Kinect_Odometry.html" title="Kinect_Odometry" alt="" coords="2211,101,2330,149"><area shape="rect" id="node18" href="module_LibeliumWSN.html" title="LibeliumWSN" alt="" coords="2354,101,2454,149"><area shape="rect" id="node19" href="module_Localization2D_Fusion.html" title="Localization2D_Fusion" alt="" coords="2478,101,2629,149"><area shape="rect" id="node20" href="module_Localization2D_PF.html" title="Localization2D_PF" alt="" coords="2653,101,2781,149"><area shape="rect" id="node21" href="module_LookAtPoint.html" title="LookAtPoint" alt="" coords="4177,101,4271,149"><area shape="poly" id="node48" href="var_NECKMSG.html" title="NECKMSG" alt="" coords="2931,221,2929,214,2923,207,2913,202,2901,199,2888,197,2875,199,2863,202,2853,207,2847,214,2845,221,2847,229,2853,235,2863,241,2875,244,2888,245,2901,244,2913,241,2923,235,2929,229"><area shape="rect" id="node22" href="module_MapCreator.html" title="MapCreator" alt="" coords="2994,101,3081,149"><area shape="rect" id="node23" href="module_MobileRobot_Giraff.html" title="MobileRobot_Giraff" alt="" coords="3105,101,3239,149"><area shape="rect" id="node24" href="module_MobileRobot_Pioneer.html" title="MobileRobot_Pioneer" alt="" coords="3264,101,3408,149"><area shape="rect" id="node25" href="module_MobileRobot_Segway.html" title="MobileRobot_Segway" alt="" coords="3433,101,3578,149"><area shape="rect" id="node26" href="module_MobileRobot_Simul.html" title="MobileRobot_Simul" alt="" coords="3602,101,3737,149"><area shape="rect" id="node27" href="module_MonoCamera.html" title="MonoCamera" alt="" coords="3761,101,3857,149"><area shape="rect" id="node28" href="module_MOX_SensorModel.html" title="MOX_SensorModel" alt="" coords="3881,101,4012,149"><area shape="rect" id="node29" href="module_MQTTMosquitto.html" title="MQTTMosquitto" alt="" coords="4037,101,4153,149"><area shape="rect" id="node30" href="module_NavigatorReactivePTG.html" title="NavigatorReactivePTG" alt="" coords="5586,101,5734,149"><area shape="rect" id="node31" href="module_NavigatorReactivePTG3D.html" title="NavigatorReactivePTG3D" alt="" coords="2806,101,2970,149"><area shape="poly" id="node49" href="var_SHUTDOWN.html" title="SHUTDOWN" alt="" coords="3152,29,3150,22,3143,15,3132,10,3119,7,3104,5,3089,7,3075,10,3065,15,3058,22,3055,29,3058,37,3065,43,3075,49,3089,52,3104,53,3119,52,3132,49,3143,43,3150,37"><area shape="rect" id="node32" href="module_NavigatorTopological.html" title="NavigatorTopological" alt="" coords="4295,101,4438,149"><area shape="rect" id="node33" href="module_Planner.html" title="Planner" alt="" coords="4463,101,4535,149"><area shape="rect" id="node34" href="module_RandomNavigator.html" title="RandomNavigator" alt="" coords="4559,101,4681,149"><area shape="rect" id="node35" href="module_RGBDSensorToReactive.html" title="RGBDSensorToReactive" alt="" coords="4705,101,4863,149"><area shape="rect" id="node36" href="module_RobotControlManager.html" title="RobotControlManager" alt="" coords="4887,101,5033,149"><area shape="rect" id="node37" href="module_SessionLogger.html" title="SessionLogger" alt="" coords="5058,101,5161,149"><area shape="rect" id="node38" href="module_SpeechSynth.html" title="SpeechSynth" alt="" coords="5185,101,5279,149"><area shape="rect" id="node39" href="module_StateCharts.html" title="StateCharts" alt="" coords="5303,101,5387,149"><area shape="rect" id="node40" href="module_TEST_extRGBDSensor.html" title="TEST_extRGBDSensor" alt="" coords="5412,101,5561,149"><area shape="rect" id="node41" href="module_TextInterpreter.html" title="TextInterpreter" alt="" coords="1366,101,1469,149"><area shape="rect" id="node42" href="module_TwitterAgent.html" title="TwitterAgent" alt="" coords="5758,101,5853,149"><area shape="rect" id="node43" href="module_VoiceFestival.html" title="VoiceFestival" alt="" coords="5877,101,5974,149"><area shape="rect" id="node44" href="module_VoiceVerbio.html" title="VoiceVerbio" alt="" coords="5999,101,6089,149"><area shape="rect" id="node45" href="module_Wifi_KeepCoverage.html" title="Wifi_KeepCoverage" alt="" coords="6113,101,6247,149"><area shape="rect" id="node46" href="module_Wifi_Monitor.html" title="Wifi_Monitor" alt="" coords="6271,101,6369,149"><area shape="rect" id="node47" href="module_WorldModel.html" title="WorldModel" alt="" coords="6394,101,6486,149"></map>
+<br><u>TODO list:</u><br>
+(None)
+<br><br><br><u>Changes log:</u><br>
+(None)
+<br><br>
+<br><br><hr><small>Page generated by <a href="https://github.com/jlblancoc/mooxygen" >Mooxygen 1.1.0</a> at Thu Jan 22 11:30:21 2015
+</small>
+<br><div align="right"> <a href="http://validator.w3.org/check?uri=referer"> <img border="0" src="http://www.w3.org/Icons/valid-html401-blue" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+</div>
+
+</body></html>

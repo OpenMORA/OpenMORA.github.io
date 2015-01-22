@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>OpenMORA</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+
+<!-- Page generated automatically by Mooxygen 1.1.0 -->
+<body>
+<div class="tabs">
+ <ul>
+  <li><a href="index.html"><span>Global overview</span></a></li>
+  <li class="current"><a href="modules.html"><span>All modules</span></a></li>
+  <li><a href="variables.html"><span>All variables</span></a></li>
+  <li><a href="commands.html"><span>All commands</span></a></li>
+  <li><a href="missions.html"><span>Mission files</span></a></li>
+  <li><a href="pipelines.html"><span>Pipelines</span></a></li>
+ </ul>
+</div><br>
+<br><center><h3> Module: Agenda</h3></center><br>
+<u>Module info:</u><br>
+<br> <div align="center" ><table class="mooxygen" width="95%" >
+<tr>
+ <td align="center" bgcolor="lightgrey"> <b>Module name</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Short description</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Publishes</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Subscribes</b> </td>
+</tr>
+<tr>
+ <td align="center"> <a href="module_Agenda.html" > <small>Agenda</small> </a></td>
+ <td align="left"> <small>Module that keeps a list of the high-level tasks commanded to the robot.</small> </td>
+ <td align="center"> <small><a href="var_TASK_LIST.html" >TASK_LIST</a> </small> </td>
+ <td align="center"> <small><a href="var_NEW_TASK.html" >NEW_TASK</a> , <a href="var_SHUTDOWN.html" >SHUTDOWN</a> , <a href="var_TASK_PLANNED.html" >TASK_PLANNED</a> </small> </td>
+</tr>
+</table> </div>
+<br>
+<u>MOOS commands accepted by the module:</u><br><ul>
+<li>(None)</li>
+</ul><br>
+<u>Parameters accepted in the MOOS mission file:</u><br>
+<div align="center" ><table class="mooxygen" width="95%" >
+<tr>
+ <td align="center" bgcolor="lightgrey"> <b>Parameter</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Description</b> </td>
+</tr>
+<tr>
+ <td align="center"> <code>Save_logfile</code> </td>
+ <td> Wheter or not to save a logFile with debug information </td>
+</tr>
+</table></div>
+<br><u>Detailed description:</u><br>
+Module that keeps a list of the high-level tasks commanded to the robot.New tasks are received via the MOOSvariable &quot;NEW_TASK&quot;This module implements methods to create and delete tasks,and to publish the list of current pending tasks to be scheduled by the Planner module.Requiered modules: Planner, StateCharts and Executor.<br><br><u>Module graph:</u><br>
+<div align="center"> <img src="var_Agenda.png" border="0" usemap="#Agenda" alt="Agenda"> </div>
+<map id="Agenda" name="Agenda"><area shape="rect" id="node1" href="module_Agenda.html" title="Agenda" alt="" coords="1587,293,1659,341"><area shape="poly" id="node52" href="var_TASK_LIST.html" title="TASK_LIST" alt="" coords="1585,413,1583,406,1577,399,1566,394,1554,391,1539,389,1525,391,1512,394,1502,399,1495,406,1493,413,1495,421,1502,427,1512,433,1525,436,1539,437,1554,436,1566,433,1577,427,1583,421"><area shape="rect" id="node2" href="module_Arm_Kinova.html" title="Arm_Kinova" alt="" coords="5,101,97,149"><area shape="rect" id="node3" href="module_AutoDocking_Camera.html" title="AutoDocking_Camera" alt="" coords="122,101,266,149"><area shape="rect" id="node4" href="module_AutoDocking_Laser.html" title="AutoDocking_Laser" alt="" coords="291,101,423,149"><area shape="rect" id="node5" href="module_BatteryManager.html" title="BatteryManager" alt="" coords="5656,101,5767,149"><area shape="poly" id="node50" href="var_NEW_TASK.html" title="NEW_TASK" alt="" coords="5188,221,5185,214,5179,207,5168,202,5155,199,5141,197,5126,199,5113,202,5103,207,5096,214,5094,221,5096,229,5103,235,5113,241,5126,244,5141,245,5155,244,5168,241,5179,235,5185,229"><area shape="rect" id="node6" href="module_CamControl_ImagingSource.html" title="CamControl_ImagingSource" alt="" coords="498,101,677,149"><area shape="rect" id="node7" href="module_DAQ_Advantech.html" title="DAQ_Advantech" alt="" coords="701,101,815,149"><area shape="rect" id="node8" href="module_DistributionMapping.html" title="DistributionMapping" alt="" coords="839,101,978,149"><area shape="rect" id="node9" href="module_Domotics_IpPower.html" title="Domotics_IpPower" alt="" coords="1002,101,1127,149"><area shape="rect" id="node10" href="module_eNeck.html" title="eNeck" alt="" coords="1151,101,1223,149"><area shape="rect" id="node11" href="module_Enose_Display.html" title="Enose_Display" alt="" coords="1247,101,1351,149"><area shape="rect" id="node12" href="module_Enose_MCE.html" title="Enose_MCE" alt="" coords="1375,101,1466,149"><area shape="rect" id="node13" href="module_Enose_Simul.html" title="Enose_Simul" alt="" coords="1491,101,1585,149"><area shape="rect" id="node14" href="module_Executor.html" title="Executor" alt="" coords="6377,101,6449,149"><area shape="rect" id="node15" href="module_GenericSensor.html" title="GenericSensor" alt="" coords="1661,101,1761,149"><area shape="rect" id="node16" href="module_JoystickControl.html" title="JoystickControl" alt="" coords="1786,101,1895,149"><area shape="rect" id="node17" href="module_Kinect_Odometry.html" title="Kinect_Odometry" alt="" coords="1920,101,2039,149"><area shape="rect" id="node18" href="module_LibeliumWSN.html" title="LibeliumWSN" alt="" coords="2063,101,2163,149"><area shape="rect" id="node19" href="module_Localization2D_Fusion.html" title="Localization2D_Fusion" alt="" coords="2187,101,2337,149"><area shape="rect" id="node20" href="module_Localization2D_PF.html" title="Localization2D_PF" alt="" coords="2362,101,2490,149"><area shape="rect" id="node21" href="module_LookAtPoint.html" title="LookAtPoint" alt="" coords="2514,101,2607,149"><area shape="rect" id="node22" href="module_MapCreator.html" title="MapCreator" alt="" coords="2632,101,2719,149"><area shape="rect" id="node23" href="module_MobileRobot_Giraff.html" title="MobileRobot_Giraff" alt="" coords="2743,101,2877,149"><area shape="rect" id="node24" href="module_MobileRobot_Pioneer.html" title="MobileRobot_Pioneer" alt="" coords="2902,101,3046,149"><area shape="rect" id="node25" href="module_MobileRobot_Segway.html" title="MobileRobot_Segway" alt="" coords="3071,101,3216,149"><area shape="rect" id="node26" href="module_MobileRobot_Simul.html" title="MobileRobot_Simul" alt="" coords="3240,101,3375,149"><area shape="rect" id="node27" href="module_MonoCamera.html" title="MonoCamera" alt="" coords="3399,101,3495,149"><area shape="rect" id="node28" href="module_MOX_SensorModel.html" title="MOX_SensorModel" alt="" coords="3519,101,3650,149"><area shape="rect" id="node29" href="module_MQTTMosquitto.html" title="MQTTMosquitto" alt="" coords="3675,101,3791,149"><area shape="rect" id="node30" href="module_NavigatorReactivePTG.html" title="NavigatorReactivePTG" alt="" coords="3815,101,3963,149"><area shape="rect" id="node31" href="module_NavigatorReactivePTG3D.html" title="NavigatorReactivePTG3D" alt="" coords="6188,101,6352,149"><area shape="poly" id="node51" href="var_SHUTDOWN.html" title="SHUTDOWN" alt="" coords="3273,29,3271,22,3264,15,3253,10,3240,7,3225,5,3210,7,3196,10,3186,15,3179,22,3176,29,3179,37,3186,43,3196,49,3210,52,3225,53,3240,52,3253,49,3264,43,3271,37"><area shape="rect" id="node32" href="module_NavigatorTopological.html" title="NavigatorTopological" alt="" coords="3987,101,4129,149"><area shape="rect" id="node33" href="module_Planner.html" title="Planner" alt="" coords="1503,485,1575,533"><area shape="poly" id="node53" href="var_TASK_PLANNED.html" title="TASK_PLANNED" alt="" coords="1643,605,1640,598,1631,591,1617,586,1600,583,1581,581,1562,583,1544,586,1530,591,1522,598,1519,605,1522,613,1530,619,1544,625,1562,628,1581,629,1600,628,1617,625,1631,619,1640,613"><area shape="rect" id="node34" href="module_RandomNavigator.html" title="RandomNavigator" alt="" coords="6473,101,6595,149"><area shape="rect" id="node35" href="module_RGBDSensorToReactive.html" title="RGBDSensorToReactive" alt="" coords="4389,101,4546,149"><area shape="rect" id="node36" href="module_RobotControlManager.html" title="RobotControlManager" alt="" coords="6619,101,6766,149"><area shape="rect" id="node37" href="module_SessionLogger.html" title="SessionLogger" alt="" coords="4685,101,4788,149"><area shape="rect" id="node38" href="module_SkypeComm.html" title="SkypeComm" alt="" coords="4931,101,5023,149"><area shape="rect" id="node39" href="module_SkypeComm_WindowsAPI.html" title="SkypeComm_WindowsAPI" alt="" coords="5221,101,5391,149"><area shape="rect" id="node40" href="module_SpeechSynth.html" title="SpeechSynth" alt="" coords="4813,101,4906,149"><area shape="rect" id="node41" href="module_StateCharts.html" title="StateCharts" alt="" coords="4153,101,4237,149"><area shape="rect" id="node42" href="module_TEST_extRGBDSensor.html" title="TEST_extRGBDSensor" alt="" coords="5047,101,5197,149"><area shape="rect" id="node43" href="module_TextInterpreter.html" title="TextInterpreter" alt="" coords="4261,101,4364,149"><area shape="rect" id="node44" href="module_TwitterAgent.html" title="TwitterAgent" alt="" coords="5416,101,5511,149"><area shape="rect" id="node45" href="module_VoiceFestival.html" title="VoiceFestival" alt="" coords="5535,101,5632,149"><area shape="rect" id="node46" href="module_VoiceVerbio.html" title="VoiceVerbio" alt="" coords="4570,101,4661,149"><area shape="rect" id="node47" href="module_Wifi_KeepCoverage.html" title="Wifi_KeepCoverage" alt="" coords="5791,101,5925,149"><area shape="rect" id="node48" href="module_Wifi_Monitor.html" title="Wifi_Monitor" alt="" coords="5949,101,6047,149"><area shape="rect" id="node49" href="module_WorldModel.html" title="WorldModel" alt="" coords="6072,101,6164,149"></map>
+<br><u>TODO list:</u><br>
+(None)
+<br><br><br><u>Changes log:</u><br>
+(None)
+<br><br>
+<br><br><hr><small>Page generated by <a href="https://github.com/jlblancoc/mooxygen" >Mooxygen 1.1.0</a> at Thu Jan 22 11:30:21 2015
+</small>
+<br><div align="right"> <a href="http://validator.w3.org/check?uri=referer"> <img border="0" src="http://www.w3.org/Icons/valid-html401-blue" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+</div>
+
+</body></html>

@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>OpenMORA</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+
+<!-- Page generated automatically by Mooxygen 1.1.0 -->
+<body>
+<div class="tabs">
+ <ul>
+  <li><a href="index.html"><span>Global overview</span></a></li>
+  <li class="current"><a href="modules.html"><span>All modules</span></a></li>
+  <li><a href="variables.html"><span>All variables</span></a></li>
+  <li><a href="commands.html"><span>All commands</span></a></li>
+  <li><a href="missions.html"><span>Mission files</span></a></li>
+  <li><a href="pipelines.html"><span>Pipelines</span></a></li>
+ </ul>
+</div><br>
+<br><center><h3> Module: TextInterpreter</h3></center><br>
+<u>Module info:</u><br>
+<br> <div align="center" ><table class="mooxygen" width="95%" >
+<tr>
+ <td align="center" bgcolor="lightgrey"> <b>Module name</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Short description</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Publishes</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Subscribes</b> </td>
+</tr>
+<tr>
+ <td align="center"> <a href="module_TextInterpreter.html" > <small>TextInterpreter</small> </a></td>
+ <td align="left"> <small>A generic text input/output module. This module parses any text written into a moos variable.</small> </td>
+ <td align="center"> <small><a href="var__output_variable_.html" >&quot;output_variable&quot;</a> , <a href="var_NECKMSG.html" >NECKMSG</a> , <a href="var_NEW_TASK.html" >NEW_TASK</a> , <a href="var_OBJECTIVE_FILE.html" >OBJECTIVE_FILE</a> , <a href="var_PNAVIGATORREACTIVEPTG3D_CMD.html" >PNAVIGATORREACTIVEPTG3D_CMD</a> , <a href="var_PNAVIGATORREACTIVEPTG_CMD.html" >PNAVIGATORREACTIVEPTG_CMD</a> , <a href="var_SKYPE_CAM.html" >SKYPE_CAM</a> , <a href="var_STOP_STATECHART.html" >STOP_STATECHART</a> </small> </td>
+ <td align="center"> <small><a href="var__listening_variable_.html" >&lt;listening_variable&gt;</a> , <a href="var_SHUTDOWN.html" >SHUTDOWN</a> </small> </td>
+</tr>
+</table> </div>
+<br>
+<u>MOOS commands accepted by the module:</u><br><ul>
+<li>(None)</li>
+</ul><br>
+<u>Parameters accepted in the MOOS mission file:</u><br>
+<div align="center" ><table class="mooxygen" width="95%" >
+<tr>
+ <td align="center" bgcolor="lightgrey"> <b>Parameter</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Description</b> </td>
+</tr>
+<tr>
+ <td align="center"> <code>listening_var</code> </td>
+ <td> The variable this module will listen to to obtain the text to parse. </td>
+</tr>
+<tr>
+ <td align="center"> <code>output_var</code> </td>
+ <td> The variable this module will write to for replies. </td>
+</tr>
+</table></div>
+<br><u>Detailed description:</u><br>
+A generic text input/output module. This module parses any text written into a moos variable.The variable name to listen to must be set as a parameter when invoking this module (see required parameters).After parsing, new tasks are generated through the &quot;NEW_TASK&quot; moos variable.It's intended to parse high level commands like 'say to &lt;person&gt; &lt;message&gt;'sent via Skype or interpreted through voice.<br><br><u>Module graph:</u><br>
+<div align="center"> <img src="var_TextInterpreter.png" border="0" usemap="#TextInterpreter" alt="TextInterpreter"> </div>
+<map id="TextInterpreter" name="TextInterpreter"><area shape="rect" id="node1" href="module_Agenda.html" title="Agenda" alt="" coords="1228,485,1300,533"><area shape="rect" id="node2" href="module_Arm_Kinova.html" title="Arm_Kinova" alt="" coords="1707,101,1799,149"><area shape="rect" id="node3" href="module_AutoDocking_Camera.html" title="AutoDocking_Camera" alt="" coords="1824,101,1968,149"><area shape="rect" id="node4" href="module_AutoDocking_Laser.html" title="AutoDocking_Laser" alt="" coords="1993,101,2125,149"><area shape="rect" id="node5" href="module_BatteryManager.html" title="BatteryManager" alt="" coords="901,293,1011,341"><area shape="poly" id="node54" href="var_NEW_TASK.html" title="NEW_TASK" alt="" coords="1074,413,1071,406,1065,399,1054,394,1041,391,1027,389,1012,391,999,394,989,399,982,406,980,413,982,421,989,427,999,433,1012,436,1027,437,1041,436,1054,433,1065,427,1071,421"><area shape="rect" id="node6" href="module_CamControl_ImagingSource.html" title="CamControl_ImagingSource" alt="" coords="2149,101,2328,149"><area shape="rect" id="node7" href="module_DAQ_Advantech.html" title="DAQ_Advantech" alt="" coords="2352,101,2467,149"><area shape="rect" id="node8" href="module_DistributionMapping.html" title="DistributionMapping" alt="" coords="2491,101,2629,149"><area shape="rect" id="node9" href="module_Domotics_IpPower.html" title="Domotics_IpPower" alt="" coords="2653,101,2779,149"><area shape="rect" id="node10" href="module_eNeck.html" title="eNeck" alt="" coords="4212,485,4284,533"><area shape="rect" id="node11" href="module_Enose_Display.html" title="Enose_Display" alt="" coords="2803,101,2907,149"><area shape="rect" id="node12" href="module_Enose_MCE.html" title="Enose_MCE" alt="" coords="2931,101,3021,149"><area shape="rect" id="node13" href="module_Enose_Simul.html" title="Enose_Simul" alt="" coords="3046,101,3141,149"><area shape="rect" id="node14" href="module_Executor.html" title="Executor" alt="" coords="800,101,872,149"><area shape="poly" id="node57" href="var_PNAVIGATORREACTIVEPTG_CMD.html" title="PNAVIGATORREACTIVEPTG_CMD" alt="" coords="821,221,815,214,799,207,774,202,742,199,707,197,671,199,640,202,614,207,598,214,593,221,598,229,614,235,640,241,671,244,707,245,742,244,774,241,799,235,815,229"><area shape="rect" id="node15" href="module_GenericSensor.html" title="GenericSensor" alt="" coords="3165,101,3265,149"><area shape="rect" id="node16" href="module_JoystickControl.html" title="JoystickControl" alt="" coords="3289,101,3399,149"><area shape="rect" id="node17" href="module_Kinect_Odometry.html" title="Kinect_Odometry" alt="" coords="3423,101,3542,149"><area shape="rect" id="node18" href="module_LibeliumWSN.html" title="LibeliumWSN" alt="" coords="3566,101,3666,149"><area shape="rect" id="node19" href="module_Localization2D_Fusion.html" title="Localization2D_Fusion" alt="" coords="3690,101,3841,149"><area shape="rect" id="node20" href="module_Localization2D_PF.html" title="Localization2D_PF" alt="" coords="3865,101,3993,149"><area shape="rect" id="node21" href="module_LookAtPoint.html" title="LookAtPoint" alt="" coords="4203,293,4296,341"><area shape="poly" id="node53" href="var_NECKMSG.html" title="NECKMSG" alt="" coords="1774,413,1772,406,1766,399,1756,394,1744,391,1731,389,1717,391,1705,394,1696,399,1690,406,1688,413,1690,421,1696,427,1705,433,1717,436,1731,437,1744,436,1756,433,1766,427,1772,421"><area shape="rect" id="node22" href="module_MapCreator.html" title="MapCreator" alt="" coords="4018,101,4105,149"><area shape="rect" id="node23" href="module_MobileRobot_Giraff.html" title="MobileRobot_Giraff" alt="" coords="4129,101,4263,149"><area shape="rect" id="node24" href="module_MobileRobot_Pioneer.html" title="MobileRobot_Pioneer" alt="" coords="4288,101,4432,149"><area shape="rect" id="node25" href="module_MobileRobot_Segway.html" title="MobileRobot_Segway" alt="" coords="4457,101,4602,149"><area shape="rect" id="node26" href="module_MobileRobot_Simul.html" title="MobileRobot_Simul" alt="" coords="4626,101,4761,149"><area shape="rect" id="node27" href="module_MonoCamera.html" title="MonoCamera" alt="" coords="4785,101,4881,149"><area shape="rect" id="node28" href="module_MOX_SensorModel.html" title="MOX_SensorModel" alt="" coords="4905,101,5036,149"><area shape="rect" id="node29" href="module_MQTTMosquitto.html" title="MQTTMosquitto" alt="" coords="5061,101,5177,149"><area shape="rect" id="node30" href="module_NavigatorReactivePTG.html" title="NavigatorReactivePTG" alt="" coords="1657,197,1805,245"><area shape="rect" id="node31" href="module_NavigatorReactivePTG3D.html" title="NavigatorReactivePTG3D" alt="" coords="1525,293,1689,341"><area shape="poly" id="node58" href="var_SHUTDOWN.html" title="SHUTDOWN" alt="" coords="3598,29,3595,22,3589,15,3578,10,3564,7,3549,5,3534,7,3521,10,3510,15,3503,22,3501,29,3503,37,3510,43,3521,49,3534,52,3549,53,3564,52,3578,49,3589,43,3595,37"><area shape="rect" id="node32" href="module_NavigatorTopological.html" title="NavigatorTopological" alt="" coords="5201,101,5343,149"><area shape="rect" id="node33" href="module_Planner.html" title="Planner" alt="" coords="5368,101,5440,149"><area shape="rect" id="node34" href="module_RandomNavigator.html" title="RandomNavigator" alt="" coords="1036,293,1159,341"><area shape="rect" id="node35" href="module_RGBDSensorToReactive.html" title="RGBDSensorToReactive" alt="" coords="5464,101,5621,149"><area shape="rect" id="node36" href="module_RobotControlManager.html" title="RobotControlManager" alt="" coords="1360,101,1507,149"><area shape="poly" id="node56" href="var_PNAVIGATORREACTIVEPTG3D_CMD.html" title="PNAVIGATORREACTIVEPTG3D_CMD" alt="" coords="1457,221,1451,214,1433,207,1406,202,1372,199,1335,197,1297,199,1263,202,1236,207,1219,214,1213,221,1219,229,1236,235,1263,241,1297,244,1335,245,1372,244,1406,241,1433,235,1451,229"><area shape="rect" id="node37" href="module_SessionLogger.html" title="SessionLogger" alt="" coords="5646,101,5749,149"><area shape="rect" id="node38" href="module_SkypeComm.html" title="SkypeComm" alt="" coords="1239,293,1331,341"><area shape="rect" id="node39" href="module_SkypeComm_WindowsAPI.html" title="SkypeComm_WindowsAPI" alt="" coords="237,293,408,341"><area shape="rect" id="node40" href="module_SpeechSynth.html" title="SpeechSynth" alt="" coords="5773,101,5867,149"><area shape="rect" id="node41" href="module_StateCharts.html" title="StateCharts" alt="" coords="433,293,517,341"><area shape="rect" id="node42" href="module_TEST_extRGBDSensor.html" title="TEST_extRGBDSensor" alt="" coords="5891,101,6040,149"><area shape="rect" id="node43" href="module_TextInterpreter.html" title="TextInterpreter" alt="" coords="503,101,606,149"><area shape="poly" id="node50" href="var__output_variable_.html" alt="" coords="227,221,225,214,220,207,212,202,202,199,191,197,180,199,170,202,162,207,157,214,155,221,157,229,162,235,170,241,180,244,191,245,202,244,212,241,220,235,225,229"><area shape="poly" id="node55" href="var_OBJECTIVE_FILE.html" title="OBJECTIVE_FILE" alt="" coords="131,221,128,214,119,207,105,202,88,199,68,197,49,199,31,202,17,207,8,214,5,221,8,229,17,235,31,241,49,244,68,245,88,244,105,241,119,235,128,229"><area shape="poly" id="node59" href="var_SKYPE_CAM.html" title="SKYPE_CAM" alt="" coords="350,221,348,214,340,207,329,202,316,199,300,197,285,199,271,202,260,207,253,214,250,221,253,229,260,235,271,241,285,244,300,245,316,244,329,241,340,235,348,229"><area shape="poly" id="node60" href="var_STOP_STATECHART.html" title="STOP_STATECHART" alt="" coords="517,221,514,214,504,207,488,202,468,199,445,197,423,199,403,202,387,207,377,214,374,221,377,229,387,235,403,241,423,244,445,245,468,244,488,241,504,235,514,229"><area shape="rect" id="node44" href="module_TwitterAgent.html" title="TwitterAgent" alt="" coords="6065,101,6159,149"><area shape="rect" id="node45" href="module_VoiceFestival.html" title="VoiceFestival" alt="" coords="6183,101,6281,149"><area shape="rect" id="node46" href="module_VoiceVerbio.html" title="VoiceVerbio" alt="" coords="1048,197,1139,245"><area shape="rect" id="node47" href="module_Wifi_KeepCoverage.html" title="Wifi_KeepCoverage" alt="" coords="6305,101,6439,149"><area shape="rect" id="node48" href="module_Wifi_Monitor.html" title="Wifi_Monitor" alt="" coords="6463,101,6561,149"><area shape="rect" id="node49" href="module_WorldModel.html" title="WorldModel" alt="" coords="6586,101,6678,149"><area shape="poly" id="node52" href="var__listening_variable_.html" title="&lt;listening_variable&gt;" alt="" coords="621,29,617,22,608,15,593,10,575,7,555,5,534,7,516,10,502,15,492,22,489,29,492,37,502,43,516,49,534,52,555,53,575,52,593,49,608,43,617,37"></map>
+<br><u>TODO list:</u><br>
+Improve documentation of module. Define parameters and published variables.Is variable SKYPE_CAM in use? If not, remove it.<br><br><br><u>Changes log:</u><br>
+(None)
+<br><br>
+<br><br><hr><small>Page generated by <a href="https://github.com/jlblancoc/mooxygen" >Mooxygen 1.1.0</a> at Thu Jan 22 11:30:21 2015
+</small>
+<br><div align="right"> <a href="http://validator.w3.org/check?uri=referer"> <img border="0" src="http://www.w3.org/Icons/valid-html401-blue" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+</div>
+
+</body></html>

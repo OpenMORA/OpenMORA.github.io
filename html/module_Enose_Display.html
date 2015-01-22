@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<title>OpenMORA</title>
+<link href="tabs.css" rel="stylesheet" type="text/css">
+
+<!-- Page generated automatically by Mooxygen 1.1.0 -->
+<body>
+<div class="tabs">
+ <ul>
+  <li><a href="index.html"><span>Global overview</span></a></li>
+  <li class="current"><a href="modules.html"><span>All modules</span></a></li>
+  <li><a href="variables.html"><span>All variables</span></a></li>
+  <li><a href="commands.html"><span>All commands</span></a></li>
+  <li><a href="missions.html"><span>Mission files</span></a></li>
+  <li><a href="pipelines.html"><span>Pipelines</span></a></li>
+ </ul>
+</div><br>
+<br><center><h3> Module: Enose_Display</h3></center><br>
+<u>Module info:</u><br>
+<br> <div align="center" ><table class="mooxygen" width="95%" >
+<tr>
+ <td align="center" bgcolor="lightgrey"> <b>Module name</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Short description</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Publishes</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Subscribes</b> </td>
+</tr>
+<tr>
+ <td align="center"> <a href="module_Enose_Display.html" > <small>Enose_Display</small> </a></td>
+ <td align="left"> <small>Graphical Display for CObservationGasSensors observations comming from electronic-noses</small> </td>
+ <td align="center"> <small></small> </td>
+ <td align="center"> <small><a href="var__enose_label_.html" >&lt;enose_label&gt;</a> , <a href="var_SHUTDOWN.html" >SHUTDOWN</a> </small> </td>
+</tr>
+</table> </div>
+<br>
+<u>MOOS commands accepted by the module:</u><br><ul>
+<li>(None)</li>
+</ul><br>
+<u>Parameters accepted in the MOOS mission file:</u><br>
+<div align="center" ><table class="mooxygen" width="95%" >
+<tr>
+ <td align="center" bgcolor="lightgrey"> <b>Parameter</b> </td>
+ <td align="center" bgcolor="lightgrey"> <b>Description</b> </td>
+</tr>
+<tr>
+ <td align="center"> <code>ENOSE_LABEL</code> </td>
+ <td> The name of the MOOS variable containing the Enose data to be displayed </td>
+</tr>
+<tr>
+ <td align="center"> <code>graphics_max_x</code> </td>
+ <td> Maximum value on the X axis plot (time axis) to display. </td>
+</tr>
+<tr>
+ <td align="center"> <code>graphics_max_y</code> </td>
+ <td> Maximum value on the Y axis plot (Votls axis) to display. </td>
+</tr>
+<tr>
+ <td align="center"> <code>graphics_min_x</code> </td>
+ <td> Minimum value on the X axis plot (time axis) to display </td>
+</tr>
+<tr>
+ <td align="center"> <code>graphics_min_y</code> </td>
+ <td> Minimum value on the Y axis plot (Votls axis) to display </td>
+</tr>
+</table></div>
+<br><u>Detailed description:</u><br>
+Graphical Display for CObservationGasSensors observations comming from electronic-nosesThis module enables the display of the different chambers and sensors of an elecronic nose publishing a CObservationGasSensors type of observationSee Enose_MCE and CGenericSensor::EnoseModular modules for examples.Sensor IDsTemperature  = 0xFFFFCRaePID		 = 0x0001<br><br><u>Module graph:</u><br>
+<div align="center"> <img src="var_Enose_Display.png" border="0" usemap="#Enose_Display" alt="Enose_Display"> </div>
+<map id="Enose_Display" name="Enose_Display"><area shape="rect" id="node1" href="module_Agenda.html" title="Agenda" alt="" coords="323,101,395,149"><area shape="rect" id="node2" href="module_Arm_Kinova.html" title="Arm_Kinova" alt="" coords="419,101,511,149"><area shape="rect" id="node3" href="module_AutoDocking_Camera.html" title="AutoDocking_Camera" alt="" coords="536,101,680,149"><area shape="rect" id="node4" href="module_AutoDocking_Laser.html" title="AutoDocking_Laser" alt="" coords="705,101,837,149"><area shape="rect" id="node5" href="module_BatteryManager.html" title="BatteryManager" alt="" coords="861,101,971,149"><area shape="rect" id="node6" href="module_CamControl_ImagingSource.html" title="CamControl_ImagingSource" alt="" coords="996,101,1175,149"><area shape="rect" id="node7" href="module_DAQ_Advantech.html" title="DAQ_Advantech" alt="" coords="1199,101,1313,149"><area shape="rect" id="node8" href="module_DistributionMapping.html" title="DistributionMapping" alt="" coords="1337,101,1476,149"><area shape="rect" id="node9" href="module_Domotics_IpPower.html" title="Domotics_IpPower" alt="" coords="1500,101,1625,149"><area shape="rect" id="node10" href="module_eNeck.html" title="eNeck" alt="" coords="1649,101,1721,149"><area shape="rect" id="node11" href="module_Enose_Display.html" title="Enose_Display" alt="" coords="5,101,109,149"><area shape="rect" id="node12" href="module_Enose_MCE.html" title="Enose_MCE" alt="" coords="1745,101,1836,149"><area shape="rect" id="node13" href="module_Enose_Simul.html" title="Enose_Simul" alt="" coords="1861,101,1955,149"><area shape="rect" id="node14" href="module_Executor.html" title="Executor" alt="" coords="1980,101,2052,149"><area shape="rect" id="node15" href="module_GenericSensor.html" title="GenericSensor" alt="" coords="2077,101,2177,149"><area shape="rect" id="node16" href="module_JoystickControl.html" title="JoystickControl" alt="" coords="2201,101,2311,149"><area shape="rect" id="node17" href="module_Kinect_Odometry.html" title="Kinect_Odometry" alt="" coords="2335,101,2454,149"><area shape="rect" id="node18" href="module_LibeliumWSN.html" title="LibeliumWSN" alt="" coords="2478,101,2578,149"><area shape="rect" id="node19" href="module_Localization2D_Fusion.html" title="Localization2D_Fusion" alt="" coords="2602,101,2753,149"><area shape="rect" id="node20" href="module_Localization2D_PF.html" title="Localization2D_PF" alt="" coords="2777,101,2905,149"><area shape="rect" id="node21" href="module_LookAtPoint.html" title="LookAtPoint" alt="" coords="2929,101,3023,149"><area shape="rect" id="node22" href="module_MapCreator.html" title="MapCreator" alt="" coords="3047,101,3134,149"><area shape="rect" id="node23" href="module_MobileRobot_Giraff.html" title="MobileRobot_Giraff" alt="" coords="3158,101,3293,149"><area shape="rect" id="node24" href="module_MobileRobot_Pioneer.html" title="MobileRobot_Pioneer" alt="" coords="3317,101,3461,149"><area shape="rect" id="node25" href="module_MobileRobot_Segway.html" title="MobileRobot_Segway" alt="" coords="3486,101,3631,149"><area shape="rect" id="node26" href="module_MobileRobot_Simul.html" title="MobileRobot_Simul" alt="" coords="3655,101,3790,149"><area shape="rect" id="node27" href="module_MonoCamera.html" title="MonoCamera" alt="" coords="3815,101,3911,149"><area shape="rect" id="node28" href="module_MOX_SensorModel.html" title="MOX_SensorModel" alt="" coords="3935,101,4065,149"><area shape="rect" id="node29" href="module_MQTTMosquitto.html" title="MQTTMosquitto" alt="" coords="4090,101,4206,149"><area shape="rect" id="node30" href="module_NavigatorReactivePTG.html" title="NavigatorReactivePTG" alt="" coords="4230,101,4378,149"><area shape="rect" id="node31" href="module_NavigatorReactivePTG3D.html" title="NavigatorReactivePTG3D" alt="" coords="134,101,298,149"><area shape="poly" id="node49" href="var_SHUTDOWN.html" title="SHUTDOWN" alt="" coords="3206,29,3203,22,3196,15,3186,10,3172,7,3157,5,3142,7,3129,10,3118,15,3111,22,3109,29,3111,37,3118,43,3129,49,3142,52,3157,53,3172,52,3186,49,3196,43,3203,37"><area shape="rect" id="node32" href="module_NavigatorTopological.html" title="NavigatorTopological" alt="" coords="4402,101,4545,149"><area shape="rect" id="node33" href="module_Planner.html" title="Planner" alt="" coords="4569,101,4641,149"><area shape="rect" id="node34" href="module_RandomNavigator.html" title="RandomNavigator" alt="" coords="4665,101,4788,149"><area shape="rect" id="node35" href="module_RGBDSensorToReactive.html" title="RGBDSensorToReactive" alt="" coords="4812,101,4969,149"><area shape="rect" id="node36" href="module_RobotControlManager.html" title="RobotControlManager" alt="" coords="4993,101,5140,149"><area shape="rect" id="node37" href="module_SessionLogger.html" title="SessionLogger" alt="" coords="5165,101,5267,149"><area shape="rect" id="node38" href="module_SpeechSynth.html" title="SpeechSynth" alt="" coords="5292,101,5385,149"><area shape="rect" id="node39" href="module_StateCharts.html" title="StateCharts" alt="" coords="5410,101,5494,149"><area shape="rect" id="node40" href="module_TEST_extRGBDSensor.html" title="TEST_extRGBDSensor" alt="" coords="5519,101,5668,149"><area shape="rect" id="node41" href="module_TextInterpreter.html" title="TextInterpreter" alt="" coords="5693,101,5795,149"><area shape="rect" id="node42" href="module_TwitterAgent.html" title="TwitterAgent" alt="" coords="5819,101,5914,149"><area shape="rect" id="node43" href="module_VoiceFestival.html" title="VoiceFestival" alt="" coords="5938,101,6035,149"><area shape="rect" id="node44" href="module_VoiceVerbio.html" title="VoiceVerbio" alt="" coords="6060,101,6151,149"><area shape="rect" id="node45" href="module_Wifi_KeepCoverage.html" title="Wifi_KeepCoverage" alt="" coords="6175,101,6308,149"><area shape="rect" id="node46" href="module_Wifi_Monitor.html" title="Wifi_Monitor" alt="" coords="6332,101,6431,149"><area shape="rect" id="node47" href="module_WorldModel.html" title="WorldModel" alt="" coords="6455,101,6547,149"><area shape="poly" id="node48" href="var__enose_label_.html" title="&lt;enose_label&gt;" alt="" coords="107,29,105,22,98,15,87,10,73,7,57,5,42,7,28,10,17,15,10,22,7,29,10,37,17,43,28,49,42,52,57,53,73,52,87,49,98,43,105,37"></map>
+<br><u>TODO list:</u><br>
+(None)
+<br><br><br><u>Changes log:</u><br>
+(None)
+<br><br>
+<br><br><hr><small>Page generated by <a href="https://github.com/jlblancoc/mooxygen" >Mooxygen 1.1.0</a> at Thu Jan 22 11:30:21 2015
+</small>
+<br><div align="right"> <a href="http://validator.w3.org/check?uri=referer"> <img border="0" src="http://www.w3.org/Icons/valid-html401-blue" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+</div>
+
+</body></html>
