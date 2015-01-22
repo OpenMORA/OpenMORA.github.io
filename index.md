@@ -10,7 +10,7 @@ Get started
 * [OpenMORA primer](tutorial-quickstart.md): OpenMORA structure and concepts. 
 * [Installing](tutorial-install.md): Instructions for Windows & GNU/Linux.
 * [Launch a robotic app](tutorial-execute-demo-app.md): Learn to launch apps.
-* [Browse existing modules](html/index.html)
+* [Browse existing modules](./html/index.html)
 * [Write a new C++ module](tutorial-creating-module.md).
 * [Command-line reference](tutorial-openmora-commands.md)
 
