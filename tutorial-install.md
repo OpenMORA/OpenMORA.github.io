@@ -26,12 +26,10 @@ Create an empty directory for OpenMORA packages:
 mkdir openmora && cd openmora
 ```
 
-Get a copy of the `mora-base` pkg and init the external submodules:
+Get a copy of the `mora-base` pkg (note the `--recursive`, required to init the external submodules):
 
 ```bash
-git clone https://github.com/OpenMORA/mora-base.git
-cd mora-base
-git submodule init && git submodule update
+git clone --recursive https://github.com/OpenMORA/mora-base.git
 ```
 
 Compile with CMake:
