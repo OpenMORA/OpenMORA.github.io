@@ -32,30 +32,26 @@ Get a copy of the `mora-base` pkg (note the `--recursive`, required to init the 
 git clone --recursive https://github.com/OpenMORA/mora-base.git
 ```
 
-Compile with CMake:
-
-```bash
-mkdir build && cd build 
-cmake ..
-make
-```
-
-## 3. Setting up environment
-In Linux, add this line to ~./bashrc
+Now we must set up the working environment. 
+In Linux, add this line to `~./bashrc`
 
 ```bash
 source [path to mora-base]/scripts/mora-setup.sh
 ```
-    
 In Windows, set these environment vars:
 
   * `MORA_PATH`: List of directories containing OpenMORA pkgs. Separator is ";" in Windows, ":" in unices. Must point to the *parent* directory of MORA pkgs, such that  `$MORA_PATH/mora-base/` exists.
   * `MORA_CMAKE_GENERATOR`: Must be set in Windows to the desired CMake generator, e.g. "Visual Studio 10 Win64"
   * Manually add `[MORA-BASE_PATH]/scripts/` to the `PATH` env var.
   * `MORA_EXECUTABLE_OUTPUT`: (Optional) If defined, will override CMake's default `EXECUTABLE_OUTPUT_PATH`. Can be used to put all executables into one single directory.
-    
 
-## 4. Download & build the rest of pkgs
+Then, do `source ~./bashrc` or open a new terminal to make sure that the new variables have been loaded, and you are ready to compile the first OpenMORA package:
+
+```bash
+mora-build mora-base
+```
+
+## 3. Download & build the rest of pkgs
 Note that the following commands work on both *Windows* and *Linux*.
 
 To download all publicly listed pkgs, simply run: 
